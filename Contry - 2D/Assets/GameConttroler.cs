@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameConttroler : MonoBehaviour
 {
-    public Image[] img;
+    public SpriteRenderer[] img;
 
     public Sprite[] country;
     public Sprite[] fieldCountry;
