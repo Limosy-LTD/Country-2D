@@ -15,6 +15,7 @@ public class GameConttroler : MonoBehaviour
         img[0].sprite = country[0];
         img[1].sprite = fieldCountry[1];
         img[2].sprite = fieldCountry[2];
+        img[3].sprite = fieldCountry[3];
     }
 
     public void OnSelectCountryMoldova()
@@ -22,6 +23,7 @@ public class GameConttroler : MonoBehaviour
         img[0].sprite = fieldCountry[0];
         img[1].sprite = country[1];
         img[2].sprite = fieldCountry[2];
+        img[3].sprite = fieldCountry[3];
     }
 
     public void OnSelectCountryRumunia()
@@ -29,5 +31,14 @@ public class GameConttroler : MonoBehaviour
         img[0].sprite = fieldCountry[0];
         img[1].sprite = fieldCountry[1];
         img[2].sprite = country[2];
+        img[3].sprite = fieldCountry[3];
+    }
+
+    public void OnSelectCountryPoland()
+    {
+        img[0].sprite = fieldCountry[0];
+        img[1].sprite = fieldCountry[1];
+        img[2].sprite = fieldCountry[2];
+        img[3].sprite = country[3];
     }
 }
