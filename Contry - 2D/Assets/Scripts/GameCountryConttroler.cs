@@ -102,93 +102,104 @@ public class GameCountryConttroler : GameConttroler
     }
 
     public void OnSeeModTurn()
-    { 
-        seeMod =!seeMod;
+    {
+        if (!showCountryFlag)
+        {
+            seeMod =!seeMod;
 
-        if (seeMod)
-        {
-            ButtonSeeMod.sprite = SpriteOnSeeMod;
-        }
-        else if (!seeMod)
-        {
-            ButtonSeeMod.sprite = SpriteOffSeeMod;
-        }
+            if (seeMod)
+            {
+               ButtonSeeMod.sprite = SpriteOnSeeMod;
+            }
+            else if (!seeMod)
+            {
+               ButtonSeeMod.sprite = SpriteOffSeeMod;
+            }
 
-        if(idCountry == 1)
-        {   
-            img[0].sprite = fieldCountry[0];
-            img[1].sprite = linearCountry[1];
-            img[2].sprite = linearCountry[2]; 
-            img[3].sprite = linearCountry[3];  
+            if(idCountry == 1)
+            {   
+               img[0].sprite = fieldCountry[0];
+               img[1].sprite = linearCountry[1];
+               img[2].sprite = linearCountry[2]; 
+               img[3].sprite = linearCountry[3];  
+            }
+            else if (idCountry == 2)
+            {
+               img[0].sprite = linearCountry[0];
+               img[1].sprite = fieldCountry[1];
+               img[2].sprite = linearCountry[2]; 
+               img[3].sprite = linearCountry[3]; 
+            }
+            else if (idCountry == 3)
+            {
+               img[0].sprite = linearCountry[0];
+               img[1].sprite = linearCountry[1];
+               img[2].sprite = fieldCountry[2]; 
+               img[3].sprite = linearCountry[3]; 
+            }
+            else if (idCountry == 4)
+            {
+               img[0].sprite = linearCountry[0];
+               img[1].sprite = linearCountry[1];
+               img[2].sprite = linearCountry[2]; 
+               img[3].sprite = fieldCountry[3];
+            }
         }
-        else if (idCountry == 2)
+        else
         {
-            img[0].sprite = linearCountry[0];
-            img[1].sprite = fieldCountry[1];
-            img[2].sprite = linearCountry[2]; 
-            img[3].sprite = linearCountry[3]; 
-        }
-        else if (idCountry == 3)
-        {
-            img[0].sprite = linearCountry[0];
-            img[1].sprite = linearCountry[1];
-            img[2].sprite = fieldCountry[2]; 
-            img[3].sprite = linearCountry[3]; 
-        }
-        else if (idCountry == 4)
-        {
-            img[0].sprite = linearCountry[0];
-            img[1].sprite = linearCountry[1];
-            img[2].sprite = linearCountry[2]; 
-            img[3].sprite = fieldCountry[3]; 
+            return;
         }
     }
 
     public void OnShowAllCountryFlag()
     {
-        if (!showCountryFlag)
-        {   
-            img[0].sprite = fieldCountry[0];
-            img[1].sprite = fieldCountry[1];
-            img[2].sprite = fieldCountry[2]; 
-            img[3].sprite = fieldCountry[3];
-
-            showCountryFlag = true;
-            ButtonSeeAllCountry.sprite = SpriteOnShowCountry;
-        }
-        else if (showCountryFlag)
+        if (!seeMod)
         {
-            if(idCountry == 1)
+            if (!showCountryFlag)
             {   
-                img[0].sprite = fieldCountry[0];
-                img[1].sprite = linearCountry[1];
-                img[2].sprite = linearCountry[2]; 
-                img[3].sprite = linearCountry[3];  
-            }
-            else if (idCountry == 2)
-            {
-                img[0].sprite = linearCountry[0];
-                img[1].sprite = fieldCountry[1];
-                img[2].sprite = linearCountry[2]; 
-                img[3].sprite = linearCountry[3]; 
-            }
-            else if (idCountry == 3)
-            {
-                img[0].sprite = linearCountry[0];
-                img[1].sprite = linearCountry[1];
-                img[2].sprite = fieldCountry[2]; 
-                img[3].sprite = linearCountry[3]; 
-            }
-            else if (idCountry == 4)
-            {
-                img[0].sprite = linearCountry[0];
-                img[1].sprite = linearCountry[1];
-                img[2].sprite = linearCountry[2]; 
-                img[3].sprite = fieldCountry[3]; 
-            }
+               img[0].sprite = fieldCountry[0];
+               img[1].sprite = fieldCountry[1];
+               img[2].sprite = fieldCountry[2]; 
+               img[3].sprite = fieldCountry[3];
 
-            showCountryFlag = false;
-            ButtonSeeAllCountry.sprite = SpriteOffShowCountry;
+               showCountryFlag = true;
+               ButtonSeeAllCountry.sprite = SpriteOnShowCountry;
+            }
+            else if (showCountryFlag)
+            {
+                if(idCountry == 1)
+                {   
+                   img[0].sprite = fieldCountry[0];
+                   img[1].sprite = linearCountry[1];
+                   img[2].sprite = linearCountry[2]; 
+                   img[3].sprite = linearCountry[3];  
+                }
+                else if (idCountry == 2)
+                {
+                   img[0].sprite = linearCountry[0];
+                   img[1].sprite = fieldCountry[1];
+                   img[2].sprite = linearCountry[2]; 
+                   img[3].sprite = linearCountry[3]; 
+                }
+
+                else if (idCountry == 4)
+                {
+                   img[0].sprite = linearCountry[0];
+                   img[1].sprite = linearCountry[1];
+                   img[2].sprite = linearCountry[2]; 
+                   img[3].sprite = fieldCountry[3];
+                }
+                else if (idCountry == 4)
+                {
+                   img[0].sprite = linearCountry[0];
+                   img[1].sprite = linearCountry[1];
+                   img[2].sprite = linearCountry[2]; 
+                   img[3].sprite = fieldCountry[3]; 
+                }
+
+                showCountryFlag = false;
+                ButtonSeeAllCountry.sprite = SpriteOffShowCountry;
+            }
         }
     }
 }
