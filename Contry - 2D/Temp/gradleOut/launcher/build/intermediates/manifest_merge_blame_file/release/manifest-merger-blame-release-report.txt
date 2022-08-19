@@ -130,7 +130,7 @@
 72-->[:unityLibrary] /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:62:9-64:68
 73            android:name="unity.build-id"
 73-->[:unityLibrary] /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:63:13-42
-74            android:value="ab0d9b1e-ecee-43eb-9057-37c0d35e3503" />
+74            android:value="c12f3851-d8a0-4038-87c4-68258dff1f34" />
 74-->[:unityLibrary] /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:64:13-65
 75    </application>
 76

@@ -161,7 +161,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 08bd02530aac1e4b45a30975106301be
+      Hash: f2bb3635d0c1a4b74643d19b103e3cb0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameConttroler
@@ -263,7 +263,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: f90db23f31340321fbd6f80c770360a7
+      Hash: 865b3001b577ebe6f1909137d5bb9b8a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameCountryConttroler
@@ -668,4 +668,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main.unity
   - Assets/Scenes/Game.unity
   playerPath: /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry
-    - 2D/Test - 2 - VersionGame - 6.0.1.F1.apk
+    - 2D/Test - 4 - VersionGame - 6.0.3.F1.apk
