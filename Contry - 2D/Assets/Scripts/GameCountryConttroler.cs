@@ -27,8 +27,17 @@ public class GameCountryConttroler : GameConttroler
     public float defaltPeople;
     public float warPeople;
 
-    public Text defaltPeopleText;
-    public Text warPeopleText;
+    [Header("Curensy")]
+    public float money;
+
+    public float[] cost;
+    public Text[] costText;
+
+    public Text[] plusPeopleDefaultText;
+    public float[] plusPeopleDefault;
+
+    public Text[] plusPeopleWarText;
+    public float[] plusPeopleWar;
 
     private void Start()
     {
@@ -216,5 +225,21 @@ public class GameCountryConttroler : GameConttroler
     public void OnOpenPanUpgrade()
     {
         PanUpgrade.SetActive(!PanUpgrade.activeSelf);
+    }
+
+    public void OnBuyUpgradePeople()
+    {
+        if(money >= cost[0])
+        {
+            money -= cost[0];
+            cost[0] *= 2;
+
+            defaltPeople += plusPeopleDefault[0];
+
+            plusPeopleDefault[0] *= 2;
+            plusPeopleDefaultText[0].text = plusPeopleDefault[0].ToString(); 
+
+            costText[0].text = cost[0] + "$";
+        }
     }
 }
