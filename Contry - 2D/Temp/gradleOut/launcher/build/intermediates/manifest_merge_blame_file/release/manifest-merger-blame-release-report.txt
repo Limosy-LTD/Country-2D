@@ -4,7 +4,7 @@
 4    package="com.Limosy.LTD.Country"
 5    android:installLocation="preferExternal"
 6    android:versionCode="1"
-7    android:versionName="6.0.0.F1" >
+7    android:versionName="6.0.1.F1" >
 8
 9    <uses-sdk
 10        android:minSdkVersion="19"
@@ -130,7 +130,7 @@
 72-->[:unityLibrary] /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:62:9-64:68
 73            android:name="unity.build-id"
 73-->[:unityLibrary] /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:63:13-42
-74            android:value="18762bdf-dfd0-428f-ab68-dc049f8fd4ea" />
+74            android:value="ab0d9b1e-ecee-43eb-9057-37c0d35e3503" />
 74-->[:unityLibrary] /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/build/intermediates/library_manifest/release/AndroidManifest.xml:64:13-65
 75    </application>
 76

@@ -1,4 +1,4 @@
-#Thu Aug 18 19:32:14 CEST 2022
+#Fri Aug 19 18:58:57 CEST 2022
 base.0=/Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

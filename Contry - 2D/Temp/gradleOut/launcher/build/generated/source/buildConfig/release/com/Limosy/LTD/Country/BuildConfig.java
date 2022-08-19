@@ -8,5 +8,5 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.Limosy.LTD.Country";
   public static final String BUILD_TYPE = "release";
   public static final int VERSION_CODE = 1;
-  public static final String VERSION_NAME = "6.0.0.F1";
+  public static final String VERSION_NAME = "6.0.1.F1";
 }
