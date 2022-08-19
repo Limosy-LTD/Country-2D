@@ -20,6 +20,16 @@ public class GameCountryConttroler : GameConttroler
     public Sprite SpriteOnSeeMod;
     public Sprite SpriteOffSeeMod;
 
+    [Header("GamePanel")]
+    public GameObject PanUpgrade;
+
+    [Header("AboutCountry")]
+    public float defaltPeople;
+    public float warPeople;
+
+    public Text defaltPeopleText;
+    public Text warPeopleText;
+
     private void Start()
     {
         if (PlayerPrefs.HasKey("ID"))
@@ -201,5 +211,10 @@ public class GameCountryConttroler : GameConttroler
                 ButtonSeeAllCountry.sprite = SpriteOffShowCountry;
             }
         }
+    }
+
+    public void OnOpenPanUpgrade()
+    {
+        PanUpgrade.SetActive(!PanUpgrade.activeSelf);
     }
 }
