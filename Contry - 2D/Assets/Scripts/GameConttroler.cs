@@ -19,6 +19,9 @@ public class GameConttroler : MonoBehaviour
     public string nameCountry;
     public int idCountry;
 
+    [Header("PanelGame")]
+    public GameObject UpdatePanel;
+
     public void OnSelectCountryUkraine()
     {
         img[0].sprite = fieldCountry[0];
@@ -69,6 +72,11 @@ public class GameConttroler : MonoBehaviour
         nameCountry = "Poland";
         PlayerPrefs.SetInt("ID", idCountry);
         idName.text = nameCountry + " " + idCountry;
+    }
+
+    public void OnOpenUpdatePan()
+    {
+        UpdatePanel.SetActive(!UpdatePanel.activeSelf);
     }
 
     public void OnClikStart()

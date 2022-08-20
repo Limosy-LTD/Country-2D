@@ -237,6 +237,7 @@ MonoBehaviour:
   idName: {fileID: 0}
   nameCountry: 
   idCountry: 0
+  UpdatePanel: {fileID: 0}
   buttonSeeAllCountry: {fileID: 86639593}
   spriteOnShowCountry: {fileID: 7917234722134153170, guid: ed6afbc13e79e4975b4bddbce77a570d, type: 3}
   spriteOffShowCountry: {fileID: -1062130321399131556, guid: ed6afbc13e79e4975b4bddbce77a570d, type: 3}
@@ -248,7 +249,7 @@ MonoBehaviour:
   peopleText: {fileID: 289897279}
   solders: 0
   soldersText: {fileID: 1184283810}
-  curencyMoney: 1000
+  curencyMoney: 10000
   cost:
   - 100
   - 0
@@ -1923,7 +1924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 178.65, y: -2.1}
+  m_AnchoredPosition: {x: 178.64996, y: -2.1}
   m_SizeDelta: {x: 337.39, y: 399.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148034063
