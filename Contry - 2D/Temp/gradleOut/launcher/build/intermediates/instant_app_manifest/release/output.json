@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.Limosy.LTD.Country",
+  "applicationId": "com.Limosy.LTD",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -11,7 +11,7 @@
         "type": "MAIN",
         "splits": [],
         "versionCode": 1,
-        "versionName": "6.0.1.F1",
+        "versionName": "7.0.0.F1",
         "outputFile": "launcher-release.apk",
         "fullName": "release",
         "baseName": "release",
@@ -19,7 +19,7 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "com.Limosy.LTD.Country",
+        "packageId": "com.Limosy.LTD",
         "split": "",
         "minSdkVersion": "19"
       }

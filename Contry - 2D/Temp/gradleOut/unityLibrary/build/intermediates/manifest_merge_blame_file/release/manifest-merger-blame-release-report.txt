@@ -4,7 +4,7 @@
 4    xmlns:tools="http://schemas.android.com/tools"
 5    package="com.unity3d.player"
 6    android:versionCode="1"
-7    android:versionName="6.0.1.F1" >
+7    android:versionName="7.0.0.F1" >
 8
 9    <uses-sdk
 10        android:minSdkVersion="19"
@@ -111,7 +111,7 @@
 62-->/Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:17:5-101
 63            android:name="unity.build-id"
 63-->/Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:17:16-45
-64            android:value="c12f3851-d8a0-4038-87c4-68258dff1f34" />
+64            android:value="0b128899-dcfe-4de1-9f7f-ab2f38615ce5" />
 64-->/Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Temp/gradleOut/unityLibrary/src/main/AndroidManifest.xml:17:46-98
 65    </application>
 66

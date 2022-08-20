@@ -8,5 +8,5 @@ public final class BuildConfig {
   public static final String LIBRARY_PACKAGE_NAME = "com.unity3d.player";
   public static final String BUILD_TYPE = "release";
   public static final int VERSION_CODE = 1;
-  public static final String VERSION_NAME = "6.0.1.F1";
+  public static final String VERSION_NAME = "7.0.0.F1";
 }

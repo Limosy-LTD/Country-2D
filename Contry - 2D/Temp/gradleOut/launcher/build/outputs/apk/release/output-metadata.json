@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.Limosy.LTD.Country",
+  "applicationId": "com.Limosy.LTD",
   "variantName": "release",
   "elements": [
     {
@@ -12,7 +12,7 @@
       "filters": [],
       "properties": [],
       "versionCode": 1,
-      "versionName": "6.0.1.F1",
+      "versionName": "7.0.0.F1",
       "enabled": true,
       "outputFile": "launcher-release.apk"
     }

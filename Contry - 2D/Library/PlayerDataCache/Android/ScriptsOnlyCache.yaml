@@ -41,7 +41,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -49,6 +53,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1518}
+    - Class: 114
+      Script: {instanceID: 2254}
     - Class: 114
       Script: {instanceID: 2470}
     - Class: 114
@@ -62,8 +68,14 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3470}
     - Class: 114
+      Script: {instanceID: 4740}
+    - Class: 114
+      Script: {instanceID: 4850}
+    - Class: 114
       Script: {instanceID: 5758}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -161,7 +173,7 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: f2bb3635d0c1a4b74643d19b103e3cb0
+      Hash: df8cbd35de66626e1c9563f1131079a1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameConttroler
@@ -263,7 +275,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 865b3001b577ebe6f1909137d5bb9b8a
+      Hash: 71bd50a099a694a27069d49c215b43bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameCountryConttroler
@@ -668,4 +680,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main.unity
   - Assets/Scenes/Game.unity
   playerPath: /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry
-    - 2D/Test - 4 - VersionGame - 6.0.3.F1.apk
+    - 2D/Countryus - 7.2.0.F1.apk

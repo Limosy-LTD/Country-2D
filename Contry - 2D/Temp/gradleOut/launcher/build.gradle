@@ -18,12 +18,12 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 30
-        applicationId 'com.Limosy.LTD.Country'
+        applicationId 'com.Limosy.LTD'
         ndk {
             abiFilters 'armeabi-v7a'
         }
         versionCode 1
-        versionName '6.0.1.F1'
+        versionName '7.0.0.F1'
     }
 
     aaptOptions {
