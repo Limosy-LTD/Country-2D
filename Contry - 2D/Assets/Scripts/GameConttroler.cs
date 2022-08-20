@@ -16,7 +16,7 @@ public class GameConttroler : MonoBehaviour
     public Sprite[] linearCountry;
 
     public Text idName;
-    public string NmCountry;
+    public string nameCountry;
     public int idCountry;
 
     public void OnSelectCountryUkraine()
@@ -27,9 +27,9 @@ public class GameConttroler : MonoBehaviour
         img[3].sprite = linearCountry[3]; 
 
         idCountry = 1;
-        NmCountry = "Ukraine";
+        nameCountry = "Ukraine";
         PlayerPrefs.SetInt("ID", idCountry);
-        idName.text = NmCountry + " " + idCountry;
+        idName.text = nameCountry + " " + idCountry;
     }
 
     public void OnSelectCountryMoldova()
@@ -40,9 +40,9 @@ public class GameConttroler : MonoBehaviour
         img[3].sprite = linearCountry[3];
         
         idCountry = 2;
-        NmCountry = "Moldova";
+        nameCountry = "Moldova";
         PlayerPrefs.SetInt("ID", idCountry);
-        idName.text = NmCountry + " " + idCountry;
+        idName.text = nameCountry + " " + idCountry;
     }
 
     public void OnSelectCountryRumunia()
@@ -53,9 +53,9 @@ public class GameConttroler : MonoBehaviour
         img[3].sprite = linearCountry[3];
 
         idCountry = 3;
-        NmCountry = "Rumania";
+        nameCountry = "Rumania";
         PlayerPrefs.SetInt("ID", idCountry);
-        idName.text = NmCountry + " " + idCountry;
+        idName.text = nameCountry + " " + idCountry;
     }
 
     public void OnSelectCountryPoland()
@@ -66,9 +66,9 @@ public class GameConttroler : MonoBehaviour
         img[3].sprite = fieldCountry[3];
 
         idCountry = 4;
-        NmCountry = "Poland";
+        nameCountry = "Poland";
         PlayerPrefs.SetInt("ID", idCountry);
-        idName.text = NmCountry + " " + idCountry;
+        idName.text = nameCountry + " " + idCountry;
     }
 
     public void OnClikStart()

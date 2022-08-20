@@ -9,35 +9,38 @@ public class GameCountryConttroler : GameConttroler
     private bool seeMod;
 
     [Header("ButtonSeeAll")]
-    public Image ButtonSeeAllCountry;
+    public Image buttonSeeAllCountry;
 
-    public Sprite SpriteOnShowCountry;
-    public Sprite SpriteOffShowCountry;
+    public Sprite spriteOnShowCountry;
+    public Sprite spriteOffShowCountry;
 
     [Header("ButtonSeeMod")]
-    public Image ButtonSeeMod;
+    public Image buttonSeeMod;
 
-    public Sprite SpriteOnSeeMod;
-    public Sprite SpriteOffSeeMod;
+    public Sprite spriteOnSeeMod;
+    public Sprite spriteOffSeeMod;
 
     [Header("GamePanel")]
-    public GameObject PanUpgrade;
+    public GameObject panUpgrade;
 
     [Header("AboutCountry")]
-    public float defaltPeople;
-    public float warPeople;
+    public float people;
+    public Text peopleText;
+
+    public float solders;
+    public Text soldersText;
 
     [Header("Curensy")]
-    public float money;
+    public float curencyMoney;
 
     public float[] cost;
     public Text[] costText;
 
-    public Text[] plusPeopleDefaultText;
-    public float[] plusPeopleDefault;
+    public float[] plusPeople;
+    public Text[] plusPeopleText;
 
-    public Text[] plusPeopleWarText;
-    public float[] plusPeopleWar;
+    public float[] plusSolder;
+    public Text[] plusSolderText;
 
     private void Start()
     {
@@ -128,11 +131,11 @@ public class GameCountryConttroler : GameConttroler
 
             if (seeMod)
             {
-               ButtonSeeMod.sprite = SpriteOnSeeMod;
+               buttonSeeMod.sprite = spriteOnSeeMod;
             }
             else if (!seeMod)
             {
-               ButtonSeeMod.sprite = SpriteOffSeeMod;
+               buttonSeeMod.sprite = spriteOffSeeMod;
             }
 
             if(idCountry == 1)
@@ -182,7 +185,7 @@ public class GameCountryConttroler : GameConttroler
                img[3].sprite = fieldCountry[3];
 
                showCountryFlag = true;
-               ButtonSeeAllCountry.sprite = SpriteOnShowCountry;
+               buttonSeeAllCountry.sprite = spriteOffShowCountry;
             }
             else if (showCountryFlag)
             {
@@ -217,29 +220,30 @@ public class GameCountryConttroler : GameConttroler
                 }
 
                 showCountryFlag = false;
-                ButtonSeeAllCountry.sprite = SpriteOffShowCountry;
+                buttonSeeAllCountry.sprite = spriteOnShowCountry;
             }
         }
     }
 
     public void OnOpenPanUpgrade()
     {
-        PanUpgrade.SetActive(!PanUpgrade.activeSelf);
+        panUpgrade.SetActive(!panUpgrade.activeSelf);
     }
 
     public void OnBuyUpgradePeople()
     {
-        if(money >= cost[0])
+        if(curencyMoney >= cost[0])
         {
-            money -= cost[0];
+            curencyMoney -= cost[0];
+
             cost[0] *= 2;
+            costText[0].text = cost[0] + " " + "$";
 
-            defaltPeople += plusPeopleDefault[0];
+            people += plusPeople[0];
+            plusPeople[0] *= 2;
+            plusPeopleText[0].text = "+" + " " + plusPeople[0] + " " + "People";
 
-            plusPeopleDefault[0] *= 2;
-            plusPeopleDefaultText[0].text = plusPeopleDefault[0].ToString(); 
-
-            costText[0].text = cost[0] + "$";
+            peopleText.text = people.ToString();
         }
     }
 }
