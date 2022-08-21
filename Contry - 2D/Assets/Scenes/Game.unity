@@ -224,16 +224,22 @@ MonoBehaviour:
   - {fileID: 422036673}
   - {fileID: 1251523175}
   - {fileID: 1117737438}
+  - {fileID: 538917027}
+  - {fileID: 296169363}
   fieldCountry:
   - {fileID: -1557553797265222168, guid: 9482297eb5fb14bd4887ef469c6e3be5, type: 3}
   - {fileID: 2193912449212797243, guid: 00085df500646471eab8f9d3b4f1fcae, type: 3}
   - {fileID: -2455536955140580591, guid: db3e7920232914092a39bd7153ee9990, type: 3}
   - {fileID: -6871883899552920029, guid: a38809f58f1a34e7c8cfd560f53bb4a6, type: 3}
+  - {fileID: 21300000, guid: e5d1beccc38634947981fcc76a8ab8b7, type: 3}
+  - {fileID: 21300000, guid: d7b0f31e808af4beb98248e4b14175eb, type: 3}
   linearCountry:
   - {fileID: 2671539228791063569, guid: 75d6c73c7e9d74d84abb7d7d3216331b, type: 3}
   - {fileID: 1418922410489672114, guid: 361200132c9434e94bf334bef5d87df9, type: 3}
   - {fileID: 6421171737204702875, guid: 615d38ff5885d495497bd6992c027ce1, type: 3}
   - {fileID: 1939995576040183010, guid: 7c92bde343f1e4f378d5d2e7b0391851, type: 3}
+  - {fileID: 21300000, guid: 2306075959222411690f8c9708829c51, type: 3}
+  - {fileID: 21300000, guid: fbfad60e435aa43d1b9fb454867aab31, type: 3}
   idName: {fileID: 0}
   nameCountry: 
   idCountry: 0
@@ -279,11 +285,15 @@ MonoBehaviour:
   - MOLDOVA
   - RUMANIA
   - POLAND
+  - SLOVAKIA
+  - HUNGARY
   flagImg:
   - {fileID: -8566980145151657624, guid: 84b8663d699184e9b8b43797d6cbb8e9, type: 3}
-  - {fileID: -6805138237417362745, guid: 84b8663d699184e9b8b43797d6cbb8e9, type: 3}
+  - {fileID: 21300000, guid: c1c1a57c4ebe7415b8fe1035972002d2, type: 3}
   - {fileID: -6805138237417362745, guid: 84b8663d699184e9b8b43797d6cbb8e9, type: 3}
   - {fileID: 8030981852063745717, guid: 84b8663d699184e9b8b43797d6cbb8e9, type: 3}
+  - {fileID: 21300000, guid: 37c454686473542cd9ecf0631b95f9f2, type: 3}
+  - {fileID: 21300000, guid: 4fb156ff78a544abab9f46190d66b39f, type: 3}
   nameYourCountryText: {fileID: 353532466}
 --- !u!1 &86639591
 GameObject:
@@ -886,6 +896,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212435357}
   m_CullTransparentMesh: 1
+--- !u!1 &296169361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296169362}
+  - component: {fileID: 296169364}
+  - component: {fileID: 296169363}
+  m_Layer: 5
+  m_Name: Hungary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &296169362
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296169361}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 682667731}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -265.64655, y: -109.08123}
+  m_SizeDelta: {x: 750, y: 750}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &296169363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296169361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6642fe52ed4fe4ea1943b3645dc9d16f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &296169364
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296169361}
+  m_CullTransparentMesh: 1
 --- !u!1 &353532464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1494,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476249875}
   m_CullTransparentMesh: 1
+--- !u!1 &538917025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 538917026}
+  - component: {fileID: 538917028}
+  - component: {fileID: 538917027}
+  m_Layer: 5
+  m_Name: Slovakia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &538917026
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538917025}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 682667731}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -259.40704, y: -40.336723}
+  m_SizeDelta: {x: 750, y: 750}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &538917027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538917025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 45a71d10ae26b40e096286ca58bdca94, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &538917028
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538917025}
+  m_CullTransparentMesh: 1
 --- !u!1 &539143701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1752,8 @@ RectTransform:
   - {fileID: 1251523174}
   - {fileID: 422036672}
   - {fileID: 1117737437}
+  - {fileID: 538917026}
+  - {fileID: 296169362}
   m_Father: {fileID: 95888602}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

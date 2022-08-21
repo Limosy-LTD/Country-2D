@@ -75,6 +75,8 @@ public class GameCountryConttroler : GameConttroler
             img[1].sprite = linearCountry[1]; 
             img[2].sprite = linearCountry[2]; 
             img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
 
             flagCountry.sprite = flagImg[0];
             nameYourCountryText.text = nameYourCountry[0];
@@ -85,6 +87,8 @@ public class GameCountryConttroler : GameConttroler
             img[1].sprite = fieldCountry[1]; 
             img[2].sprite = linearCountry[2]; 
             img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
 
             flagCountry.sprite = flagImg[1];
             nameYourCountryText.text = nameYourCountry[1];
@@ -95,6 +99,8 @@ public class GameCountryConttroler : GameConttroler
             img[1].sprite = linearCountry[1]; 
             img[2].sprite = fieldCountry[2]; 
             img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
 
             flagCountry.sprite = flagImg[2];
             nameYourCountryText.text = nameYourCountry[2];
@@ -105,9 +111,35 @@ public class GameCountryConttroler : GameConttroler
             img[1].sprite = linearCountry[1]; 
             img[2].sprite = linearCountry[2]; 
             img[3].sprite = fieldCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
 
             flagCountry.sprite = flagImg[3];
             nameYourCountryText.text = nameYourCountry[3];
+        }
+        else if (idCountry == 5)
+        {
+            img[0].sprite = linearCountry[0];
+            img[1].sprite = linearCountry[1]; 
+            img[2].sprite = linearCountry[2]; 
+            img[3].sprite = linearCountry[3];
+            img[4].sprite = fieldCountry[4];
+            img[5].sprite = linearCountry[5];
+
+            flagCountry.sprite = flagImg[4];
+            nameYourCountryText.text = nameYourCountry[4];
+        }
+        else if (idCountry == 6)
+        {
+            img[0].sprite = linearCountry[0];
+            img[1].sprite = linearCountry[1]; 
+            img[2].sprite = linearCountry[2]; 
+            img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = fieldCountry[5];
+
+            flagCountry.sprite = flagImg[5];
+            nameYourCountryText.text = nameYourCountry[5];
         }
     }
 
@@ -154,6 +186,7 @@ public class GameCountryConttroler : GameConttroler
            img[3].sprite = fieldCountry[3];
         }
     }
+
 
     public void OnSeeModTurn()
     {
