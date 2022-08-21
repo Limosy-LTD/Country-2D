@@ -20,6 +20,12 @@ public class GameCountryConttroler : GameConttroler
     public Sprite spriteOnSeeMod;
     public Sprite spriteOffSeeMod;
 
+    [Header("ButtonDataCountry")]
+    public Image buttonDataCountry;
+
+    public Sprite spriteOnDataCountry;
+    public Sprite spriteOffDataCountry;
+
     [Header("GamePanel")]
     public GameObject panUpgrade;
     public GameObject panDataCountry;
@@ -33,6 +39,7 @@ public class GameCountryConttroler : GameConttroler
 
     [Header("Curensy")]
     public float curencyMoney;
+    public Text dataCurencyMoney;
     public Text curencyText;
 
     public float[] cost;
@@ -44,12 +51,16 @@ public class GameCountryConttroler : GameConttroler
     public float[] plusSolder;
     public Text[] plusSolderText;
 
+    public float minBornSolder;
+    public float maxBornSolder;
+
     [Header("DataCountryPan")]
     public Image flagCountry;
     public string[] nameYourCountry;
 
     public Sprite[] flagImg;
     public Text nameYourCountryText;
+
 
     private void Start()
     {
@@ -249,6 +260,12 @@ public class GameCountryConttroler : GameConttroler
     private void Update()
     {
         curencyText.text = curencyMoney.ToString();
+        
+        dataCurencyMoney.text = curencyMoney.ToString();
+
+        peopleText.text = people.ToString();
+
+        soldersText.text = solders.ToString();
     }
 
     public void OnOpenPanUpgrade()
@@ -266,6 +283,15 @@ public class GameCountryConttroler : GameConttroler
         if (panUpgrade.activeSelf)
         {
             return;
+        }
+
+        if (panDataCountry.activeSelf)
+        {
+            buttonDataCountry.sprite = spriteOnDataCountry;
+        }
+        else if (!panDataCountry.activeSelf)
+        {
+            buttonDataCountry.sprite = spriteOffDataCountry;
         }
 
         panDataCountry.SetActive(!panDataCountry.activeSelf);

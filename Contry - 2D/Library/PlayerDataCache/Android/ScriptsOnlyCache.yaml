@@ -52,27 +52,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1518}
+      Script: {instanceID: 1522}
     - Class: 114
-      Script: {instanceID: 2254}
+      Script: {instanceID: 2258}
     - Class: 114
-      Script: {instanceID: 2470}
+      Script: {instanceID: 2474}
     - Class: 114
-      Script: {instanceID: 2692}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 3100}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 4740}
+      Script: {instanceID: 4744}
     - Class: 114
-      Script: {instanceID: 4850}
+      Script: {instanceID: 4854}
     - Class: 114
-      Script: {instanceID: 5758}
+      Script: {instanceID: 5762}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -107,27 +107,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1518}
+      Script: {instanceID: 1522}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 2254}
+      Script: {instanceID: 2258}
     - Class: 114
-      Script: {instanceID: 2692}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 3100}
+      Script: {instanceID: 3104}
     - Class: 114
-      Script: {instanceID: 3350}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3470}
+      Script: {instanceID: 3474}
     - Class: 114
-      Script: {instanceID: 4740}
+      Script: {instanceID: 4744}
     - Class: 114
-      Script: {instanceID: 4850}
+      Script: {instanceID: 4854}
     - Class: 114
-      Script: {instanceID: 5758}
+      Script: {instanceID: 5762}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -275,7 +275,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 71bd50a099a694a27069d49c215b43bc
+      Hash: 1fa41b3c12d27858287e83446f144a79
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameCountryConttroler
@@ -680,4 +680,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main.unity
   - Assets/Scenes/Game.unity
   playerPath: /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry
-    - 2D/Countryus - 7.2.0.F1.apk
+    - 2D/Countryus - 8.0.0.F1.apk
