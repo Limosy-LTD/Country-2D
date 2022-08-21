@@ -7,6 +7,10 @@ public class GameCountryConttroler : GameConttroler
 {
     private bool showCountryFlag;
     private bool seeMod;
+    private bool fildsStart;
+
+    public int FieldGrowMin;
+    public int FieldGrowMax;
 
     [Header("ButtonSeeAll")]
     public Image buttonSeeAllCountry;
@@ -37,19 +41,22 @@ public class GameCountryConttroler : GameConttroler
     public float solders;
     public Text soldersText;
 
+    public float fields;
+    public Text fieldsText;
+
     [Header("Curensy")]
     public float curencyMoney;
+
     public Text dataCurencyMoney;
     public Text curencyText;
 
     public float[] cost;
     public Text[] costText;
 
-    public float[] plusPeople;
-    public Text[] plusPeopleText;
+    public float[] plusUpgradePopulation;
+    public Text[] plusUpgradePopulationText;
 
-    public float[] plusSolder;
-    public Text[] plusSolderText;
+    public float[] plusUpgradeFields;
 
     public float minBornSolder;
     public float maxBornSolder;
@@ -187,6 +194,32 @@ public class GameCountryConttroler : GameConttroler
         }
     }
 
+    public void OnPressSlovakia()
+    {
+        if (seeMod)
+        {
+           img[0].sprite = linearCountry[0];
+           img[1].sprite = linearCountry[1];
+           img[2].sprite = linearCountry[2]; 
+           img[3].sprite = linearCountry[3];
+           img[4].sprite = fieldCountry[4];
+           img[5].sprite = linearCountry[5];
+        }
+    }
+
+    public void OnPressHungary()
+    {
+        if (seeMod)
+        {
+           img[0].sprite = linearCountry[0];
+           img[1].sprite = linearCountry[1];
+           img[2].sprite = linearCountry[2]; 
+           img[3].sprite = linearCountry[3];
+           img[4].sprite = linearCountry[4];
+           img[5].sprite = fieldCountry[5];
+        }
+    }
+
 
     public void OnSeeModTurn()
     {
@@ -208,21 +241,27 @@ public class GameCountryConttroler : GameConttroler
                img[0].sprite = fieldCountry[0];
                img[1].sprite = linearCountry[1];
                img[2].sprite = linearCountry[2]; 
-               img[3].sprite = linearCountry[3];  
+               img[3].sprite = linearCountry[3];
+               img[4].sprite = linearCountry[4];
+               img[5].sprite = linearCountry[5];  
             }
             else if (idCountry == 2)
             {
                img[0].sprite = linearCountry[0];
                img[1].sprite = fieldCountry[1];
                img[2].sprite = linearCountry[2]; 
-               img[3].sprite = linearCountry[3]; 
+               img[3].sprite = linearCountry[3];
+               img[4].sprite = linearCountry[4];
+               img[5].sprite = linearCountry[5];  
             }
             else if (idCountry == 3)
             {
                img[0].sprite = linearCountry[0];
                img[1].sprite = linearCountry[1];
                img[2].sprite = fieldCountry[2]; 
-               img[3].sprite = linearCountry[3]; 
+               img[3].sprite = linearCountry[3];
+               img[4].sprite = linearCountry[4];
+               img[5].sprite = linearCountry[5];  
             }
             else if (idCountry == 4)
             {
@@ -230,6 +269,26 @@ public class GameCountryConttroler : GameConttroler
                img[1].sprite = linearCountry[1];
                img[2].sprite = linearCountry[2]; 
                img[3].sprite = fieldCountry[3];
+               img[4].sprite = linearCountry[4];
+               img[5].sprite = linearCountry[5];  
+            }
+            else if (idCountry == 5)
+            {
+               img[0].sprite = linearCountry[0];
+               img[1].sprite = linearCountry[1];
+               img[2].sprite = linearCountry[2]; 
+               img[3].sprite = linearCountry[3];
+               img[4].sprite = fieldCountry[4];
+               img[5].sprite = linearCountry[5];  
+            }
+            else if (idCountry == 6)
+            {
+               img[0].sprite = linearCountry[0];
+               img[1].sprite = linearCountry[1];
+               img[2].sprite = linearCountry[2]; 
+               img[3].sprite = linearCountry[3];
+               img[4].sprite = linearCountry[4];
+               img[5].sprite = fieldCountry[5];  
             }
         }
         else
@@ -248,6 +307,8 @@ public class GameCountryConttroler : GameConttroler
                img[1].sprite = fieldCountry[1];
                img[2].sprite = fieldCountry[2]; 
                img[3].sprite = fieldCountry[3];
+               img[4].sprite = fieldCountry[4];
+               img[5].sprite = fieldCountry[5];
 
                showCountryFlag = true;
                buttonSeeAllCountry.sprite = spriteOffShowCountry;
@@ -259,14 +320,18 @@ public class GameCountryConttroler : GameConttroler
                    img[0].sprite = fieldCountry[0];
                    img[1].sprite = linearCountry[1];
                    img[2].sprite = linearCountry[2]; 
-                   img[3].sprite = linearCountry[3];  
+                   img[3].sprite = linearCountry[3];
+                   img[4].sprite = linearCountry[4];
+                   img[5].sprite = linearCountry[5];
                 }
                 else if (idCountry == 2)
                 {
                    img[0].sprite = linearCountry[0];
                    img[1].sprite = fieldCountry[1];
                    img[2].sprite = linearCountry[2]; 
-                   img[3].sprite = linearCountry[3]; 
+                   img[3].sprite = linearCountry[3];
+                   img[4].sprite = linearCountry[4];
+                   img[5].sprite = linearCountry[5];
                 }
 
                 else if (idCountry == 3)
@@ -275,13 +340,35 @@ public class GameCountryConttroler : GameConttroler
                    img[1].sprite = linearCountry[1];
                    img[2].sprite = fieldCountry[2]; 
                    img[3].sprite = linearCountry[3];
+                   img[4].sprite = linearCountry[4];
+                   img[5].sprite = linearCountry[5];
                 }
                 else if (idCountry == 4)
                 {
                    img[0].sprite = linearCountry[0];
                    img[1].sprite = linearCountry[1];
                    img[2].sprite = linearCountry[2]; 
-                   img[3].sprite = fieldCountry[3]; 
+                   img[3].sprite = fieldCountry[3];
+                   img[4].sprite = linearCountry[4];
+                   img[5].sprite = linearCountry[5];
+                }
+                else if (idCountry == 5)
+                {
+                   img[0].sprite = linearCountry[0];
+                   img[1].sprite = linearCountry[1];
+                   img[2].sprite = linearCountry[2]; 
+                   img[3].sprite = linearCountry[3];
+                   img[4].sprite = fieldCountry[4];
+                   img[5].sprite = linearCountry[5];
+                }
+                else if (idCountry == 6)
+                {
+                   img[0].sprite = linearCountry[0];
+                   img[1].sprite = linearCountry[1];
+                   img[2].sprite = linearCountry[2]; 
+                   img[3].sprite = linearCountry[3];
+                   img[4].sprite = linearCountry[4];
+                   img[5].sprite = fieldCountry[5];
                 }
 
                 showCountryFlag = false;
@@ -297,8 +384,8 @@ public class GameCountryConttroler : GameConttroler
         dataCurencyMoney.text = curencyMoney.ToString();
 
         peopleText.text = people.ToString();
-
         soldersText.text = solders.ToString();
+        fieldsText.text = fields.ToString();
     }
 
     public void OnOpenPanUpgrade()
@@ -339,9 +426,9 @@ public class GameCountryConttroler : GameConttroler
             cost[0] *= 2;
             costText[0].text = cost[0] + " " + "$";
 
-            people += plusPeople[0];
-            plusPeople[0] *= 2;
-            plusPeopleText[0].text = "+" + " " + plusPeople[0] + " " + "People";
+            people += plusUpgradePopulation[0];
+            plusUpgradePopulation[0] *= 2;
+            plusUpgradePopulationText[0].text = "+" + " " + plusUpgradePopulation[0] + " " + "People";
 
             peopleText.text = people.ToString();
         }
@@ -356,11 +443,45 @@ public class GameCountryConttroler : GameConttroler
             cost[1] *= 2;
             costText[1].text = cost[1] + " " + "$";
 
-            solders += plusSolder[0];
-            plusSolder[0] *= 2;
-            plusSolderText[0].text = "+" + " " + plusSolder[0] + " " + "Solder";
+            solders += plusUpgradePopulation[1];
+            plusUpgradePopulation[1] *= 2;
+            plusUpgradePopulationText[1].text = "+" + " " + plusUpgradePopulation[1] + " " + "Solder";
 
             soldersText.text = solders.ToString();
         }
+    }
+
+    public void OnBuyUpgradeField()
+    {
+        if(curencyMoney >= cost[2])
+        {
+            curencyMoney -= cost[2];
+
+            cost[2] *= 2;
+            costText[2].text = cost[2] + " " + "$";
+
+            plusUpgradeFields[0] *= 2;
+
+            FieldGrowMin *= 2;
+            FieldGrowMax *= 4;
+
+            fieldsText.text = fields.ToString();
+
+            if (!fildsStart)
+            {
+                StartCoroutine(FieldsGrow());
+                fildsStart = true;
+            }
+        }
+    }
+
+    IEnumerator FieldsGrow()
+    {
+        float RandomGrowFields = Random.Range(FieldGrowMin, FieldGrowMax);
+
+        fields += RandomGrowFields;
+
+        yield return new WaitForSecondsRealtime(20f);
+        StartCoroutine(FieldsGrow());
     }
 }
