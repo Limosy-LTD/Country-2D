@@ -275,7 +275,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 1fa41b3c12d27858287e83446f144a79
+      Hash: 503a7cde2376f3c8668a7b7eb31f36bc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameCountryConttroler
@@ -680,4 +680,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main.unity
   - Assets/Scenes/Game.unity
   playerPath: /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry
-    - 2D/Countryus - 8.0.0.F1.apk
+    - 2D/Countryus - 9.0.0.F1.apk
