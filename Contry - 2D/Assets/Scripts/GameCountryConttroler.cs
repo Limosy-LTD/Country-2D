@@ -7,10 +7,6 @@ public class GameCountryConttroler : GameConttroler
 {
     private bool showCountryFlag;
     private bool seeMod;
-    private bool fildsStart;
-
-    public int FieldGrowMin;
-    public int FieldGrowMax;
 
     [Header("ButtonSeeAll")]
     public Image buttonSeeAllCountry;
@@ -34,32 +30,9 @@ public class GameCountryConttroler : GameConttroler
     public GameObject panUpgrade;
     public GameObject panDataCountry;
 
-    [Header("AboutCountry")]
-    public float people;
-    public Text peopleText;
-
-    public float solders;
-    public Text soldersText;
-
-    public float fields;
-    public Text fieldsText;
-
     [Header("Curensy")]
     public float curencyMoney;
-
-    public Text dataCurencyMoney;
     public Text curencyText;
-
-    public float[] cost;
-    public Text[] costText;
-
-    public float[] plusUpgradePopulation;
-    public Text[] plusUpgradePopulationText;
-
-    public float[] plusUpgradeFields;
-
-    public float minBornSolder;
-    public float maxBornSolder;
 
     [Header("DataCountryPan")]
     public Image flagCountry;
@@ -68,6 +41,28 @@ public class GameCountryConttroler : GameConttroler
     public Sprite[] flagImg;
     public Text nameYourCountryText;
 
+    [Header("PanelUpgradeSettings")]
+    public float[] costUpgradeItem;
+
+    public Image population;
+    public Image livingZone;
+    public Image industrialZone;
+    public Image entertainmentZone;
+    public Image buildersZone;
+
+    public float populationFill;
+    public float livingZoneFill;
+    public float industrialZoneFill;
+    public float entertainmentZoneFill;
+    public float buildersZoneFill;
+
+    public GameObject populationMedal;
+    public GameObject livingZoneMedal;
+    public GameObject industrialZoneMedal;
+    public GameObject entertainmentZoneMedal;
+    public GameObject buildersZoneMedal;
+
+    public Text[] textDataUpgrade; 
 
     private void Start()
     {
@@ -152,34 +147,40 @@ public class GameCountryConttroler : GameConttroler
 
     public void OnPressUkraine()
     {
-        if(seeMod)
+        if (seeMod)
         {
-            img[0].sprite = fieldCountry[0]; 
+            img[0].sprite = fieldCountry[0];
             img[1].sprite = linearCountry[1];
-            img[2].sprite = linearCountry[2]; 
+            img[2].sprite = linearCountry[2];
             img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
         }
     }
 
     public void OnPressMoldova()
     {
-        if(seeMod)
+        if (seeMod)
         {
-           img[0].sprite = linearCountry[0]; 
-           img[1].sprite = fieldCountry[1];
-           img[2].sprite = linearCountry[2]; 
-           img[3].sprite = linearCountry[3];
+            img[0].sprite = linearCountry[0];
+            img[1].sprite = fieldCountry[1];
+            img[2].sprite = linearCountry[2];
+            img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
         }
     }
 
     public void OnPressRumunia()
     {
-        if(seeMod)
+        if (seeMod)
         {
-           img[0].sprite = linearCountry[0];
-           img[1].sprite = linearCountry[1];
-           img[2].sprite = fieldCountry[2]; 
-           img[3].sprite = linearCountry[3];
+            img[0].sprite = linearCountry[0];
+            img[1].sprite = linearCountry[1];
+            img[2].sprite = fieldCountry[2];
+            img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
         }
     }
 
@@ -187,10 +188,12 @@ public class GameCountryConttroler : GameConttroler
     {
         if (seeMod)
         {
-           img[0].sprite = linearCountry[0];
-           img[1].sprite = linearCountry[1];
-           img[2].sprite = linearCountry[2]; 
-           img[3].sprite = fieldCountry[3];
+            img[0].sprite = linearCountry[0];
+            img[1].sprite = linearCountry[1];
+            img[2].sprite = linearCountry[2];
+            img[3].sprite = fieldCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = linearCountry[5];
         }
     }
 
@@ -198,12 +201,12 @@ public class GameCountryConttroler : GameConttroler
     {
         if (seeMod)
         {
-           img[0].sprite = linearCountry[0];
-           img[1].sprite = linearCountry[1];
-           img[2].sprite = linearCountry[2]; 
-           img[3].sprite = linearCountry[3];
-           img[4].sprite = fieldCountry[4];
-           img[5].sprite = linearCountry[5];
+            img[0].sprite = linearCountry[0];
+            img[1].sprite = linearCountry[1];
+            img[2].sprite = linearCountry[2];
+            img[3].sprite = linearCountry[3];
+            img[4].sprite = fieldCountry[4];
+            img[5].sprite = linearCountry[5];
         }
     }
 
@@ -211,12 +214,12 @@ public class GameCountryConttroler : GameConttroler
     {
         if (seeMod)
         {
-           img[0].sprite = linearCountry[0];
-           img[1].sprite = linearCountry[1];
-           img[2].sprite = linearCountry[2]; 
-           img[3].sprite = linearCountry[3];
-           img[4].sprite = linearCountry[4];
-           img[5].sprite = fieldCountry[5];
+            img[0].sprite = linearCountry[0];
+            img[1].sprite = linearCountry[1];
+            img[2].sprite = linearCountry[2];
+            img[3].sprite = linearCountry[3];
+            img[4].sprite = linearCountry[4];
+            img[5].sprite = fieldCountry[5];
         }
     }
 
@@ -290,10 +293,6 @@ public class GameCountryConttroler : GameConttroler
                img[4].sprite = linearCountry[4];
                img[5].sprite = fieldCountry[5];  
             }
-        }
-        else
-        {
-            return;
         }
     }
 
@@ -380,12 +379,37 @@ public class GameCountryConttroler : GameConttroler
     private void Update()
     {
         curencyText.text = curencyMoney.ToString();
-        
-        dataCurencyMoney.text = curencyMoney.ToString();
 
-        peopleText.text = people.ToString();
-        soldersText.text = solders.ToString();
-        fieldsText.text = fields.ToString();
+        textDataUpgrade[0].text = "Population - " + population.fillAmount;
+        textDataUpgrade[1].text = "Living Zone - " + livingZone.fillAmount;
+        textDataUpgrade[2].text = "Industrial Zone - " + industrialZone.fillAmount;
+        textDataUpgrade[3].text = "Entertainment Zone - " + entertainmentZone.fillAmount;
+        textDataUpgrade[4].text = "Builders Zone - " + buildersZone.fillAmount;
+
+        if (population.fillAmount >= 1f)
+        {
+             textDataUpgrade[0].text = "Population - " + population.fillAmount + " Completed";
+        }
+
+        if (livingZone.fillAmount >= 1f)
+        {
+             textDataUpgrade[1].text = "Living Zone - " + livingZone.fillAmount + " Completed";
+        }
+
+        if (industrialZone.fillAmount >= 1f)
+        {
+             textDataUpgrade[2].text = "Industrial Zone - " + industrialZone.fillAmount + " Completed";
+        }
+
+        if (entertainmentZone.fillAmount >= 1f)
+        {
+             textDataUpgrade[3].text = "Entertainment Zone - " + entertainmentZone.fillAmount + " Completed";
+        }
+
+        if (buildersZone.fillAmount >= 1f)
+        {
+            textDataUpgrade[4].text = "Builders Zone - " + buildersZone.fillAmount + " Completed";
+        }
     }
 
     public void OnOpenPanUpgrade()
@@ -417,71 +441,83 @@ public class GameCountryConttroler : GameConttroler
         panDataCountry.SetActive(!panDataCountry.activeSelf);
     }
 
-    public void OnBuyUpgradePeople()
+    public void OnPressBuyUpgradePopulation()
     {
-        if(curencyMoney >= cost[0])
+        if (curencyMoney >= costUpgradeItem[0])
         {
-            curencyMoney -= cost[0];
-
-            cost[0] *= 2;
-            costText[0].text = cost[0] + " " + "$";
-
-            people += plusUpgradePopulation[0];
-            plusUpgradePopulation[0] *= 2;
-            plusUpgradePopulationText[0].text = "+" + " " + plusUpgradePopulation[0] + " " + "People";
-
-            peopleText.text = people.ToString();
-        }
-    }
-
-    public void OnBuyUpgradeSoder()
-    {
-        if(curencyMoney >= cost[1])
-        {
-            curencyMoney -= cost[1];
-
-            cost[1] *= 2;
-            costText[1].text = cost[1] + " " + "$";
-
-            solders += plusUpgradePopulation[1];
-            plusUpgradePopulation[1] *= 2;
-            plusUpgradePopulationText[1].text = "+" + " " + plusUpgradePopulation[1] + " " + "Solder";
-
-            soldersText.text = solders.ToString();
-        }
-    }
-
-    public void OnBuyUpgradeField()
-    {
-        if(curencyMoney >= cost[2])
-        {
-            curencyMoney -= cost[2];
-
-            cost[2] *= 2;
-            costText[2].text = cost[2] + " " + "$";
-
-            plusUpgradeFields[0] *= 2;
-
-            FieldGrowMin *= 2;
-            FieldGrowMax *= 4;
-
-            fieldsText.text = fields.ToString();
-
-            if (!fildsStart)
+            if (population.fillAmount >= 1f)
             {
-                StartCoroutine(FieldsGrow());
-                fildsStart = true;
+                populationMedal.SetActive(true);
+                return;
             }
+
+            curencyMoney -= costUpgradeItem[0];
+
+            population.fillAmount += populationFill;
         }
     }
 
-    IEnumerator FieldsGrow()
+    public void OnPressBuyUpgradeLivingZone()
     {
-        float RandomGrowFields = Random.Range(FieldGrowMin, FieldGrowMax);
+        if (curencyMoney >= costUpgradeItem[1])
+        {
+            if (livingZone.fillAmount >= 1f)
+            {
+                livingZoneMedal.SetActive(true);
+                return;
+            }
 
-        fields += RandomGrowFields;
+            curencyMoney -= costUpgradeItem[1];
 
-        yield return new WaitForSecondsRealtime(20f);
-        StartCoroutine(FieldsGrow());
+            livingZone.fillAmount += livingZoneFill;
+        }
+    }
+
+    public void OnPressBuyUpgradeIndustrialZone()
+    {
+        if (curencyMoney >= costUpgradeItem[2])
+        {
+            if (industrialZone.fillAmount >= 1f)
+            {
+                industrialZoneMedal.SetActive(true);
+                return;
+            }
+
+            curencyMoney -= costUpgradeItem[2];
+
+            industrialZone.fillAmount += industrialZoneFill;
+        }
+    }
+
+    public void OnPressBuyUpgradeEntertainmentZone()
+    {
+        if (curencyMoney >= costUpgradeItem[3])
+        {
+            if (entertainmentZone.fillAmount >= 1f)
+            {
+                entertainmentZoneMedal.SetActive(true);
+                return;
+            }
+
+            curencyMoney -= costUpgradeItem[3];
+
+            entertainmentZone.fillAmount += entertainmentZoneFill;
+        }
+    }
+
+    public void OnPressBuyUpgradeBuilderZone()
+    {
+        if (curencyMoney >= costUpgradeItem[4])
+        {
+            if (buildersZone.fillAmount >= 1f)
+            {
+                buildersZoneMedal.SetActive(true);
+                return;
+            }
+
+            curencyMoney -= costUpgradeItem[4];
+
+            buildersZone.fillAmount += buildersZoneFill;
+        }
     }
 }
