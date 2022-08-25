@@ -30,6 +30,8 @@ public class GameCountryConttroler : GameConttroler
     public GameObject panUpgrade;
     public GameObject panDataCountry;
 
+    public GameObject WaterPanGame;
+
     [Header("Curensy")]
     public float curencyMoney;
     public Text curencyText;
@@ -69,6 +71,11 @@ public class GameCountryConttroler : GameConttroler
         if (PlayerPrefs.HasKey("ID"))
         {
             idCountry = PlayerPrefs.GetInt("ID");
+        }
+
+        if (PlayerPrefs.HasKey("WaterData"))
+        {
+            WaterData = PlayerPrefs.GetInt("WaterData");
         }
 
         if(idCountry == 1)
@@ -142,6 +149,15 @@ public class GameCountryConttroler : GameConttroler
 
             flagCountry.sprite = flagImg[5];
             nameYourCountryText.text = nameYourCountry[5];
+        }
+
+        if (WaterData == 1)
+        {
+            WaterPanGame.SetActive(true);
+        }
+        else if (WaterData == 0)
+        {
+            WaterPanGame.SetActive(false);
         }
     }
 

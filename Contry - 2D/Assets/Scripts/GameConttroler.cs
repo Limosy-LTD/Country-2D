@@ -21,6 +21,13 @@ public class GameConttroler : MonoBehaviour
 
     [Header("PanelGame")]
     public GameObject UpdatePanel;
+    public GameObject SettingsPanel;
+
+    [Header("GameObject")]
+    public GameObject WaterObject;
+    public int WaterData;
+
+    public Text TitleWaterSettings;
 
     public void OnSelectCountryUkraine()
     {
@@ -115,6 +122,31 @@ public class GameConttroler : MonoBehaviour
     public void OnOpenUpdatePan()
     {
         UpdatePanel.SetActive(!UpdatePanel.activeSelf);
+    }
+
+    public void OnOpenSettingsPan()
+    {
+        SettingsPanel.SetActive(!SettingsPanel.activeSelf);
+    }
+
+    public void OnClikWaterChange()
+    {
+        WaterObject.SetActive(!WaterObject.activeSelf);
+
+        if (!WaterObject.activeSelf)
+        {
+            TitleWaterSettings.text = "Water - Off";
+            WaterData = 0;
+
+            PlayerPrefs.SetInt("WaterData", WaterData);
+        }
+        else if (WaterObject.activeSelf)
+        {
+            TitleWaterSettings.text = "Water - On";
+            WaterData = 1;
+
+            PlayerPrefs.SetInt("WaterData", WaterData);
+        }
     }
 
     public void OnClikStart()

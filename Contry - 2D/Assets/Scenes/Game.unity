@@ -244,6 +244,10 @@ MonoBehaviour:
   nameCountry: 
   idCountry: 0
   UpdatePanel: {fileID: 0}
+  SettingsPanel: {fileID: 0}
+  WaterObject: {fileID: 0}
+  WaterData: 0
+  TitleWaterSettings: {fileID: 0}
   buttonSeeAllCountry: {fileID: 86639593}
   spriteOnShowCountry: {fileID: 7296455168530560912, guid: 31807867893074ad584b35c70138880f, type: 3}
   spriteOffShowCountry: {fileID: -1762484114053470995, guid: 31807867893074ad584b35c70138880f, type: 3}
@@ -255,6 +259,7 @@ MonoBehaviour:
   spriteOffDataCountry: {fileID: 257851670823136862, guid: 31807867893074ad584b35c70138880f, type: 3}
   panUpgrade: {fileID: 40766006}
   panDataCountry: {fileID: 1597190399}
+  WaterPanGame: {fileID: 2047882701}
   curencyMoney: 10000
   curencyText: {fileID: 465815763}
   flagCountry: {fileID: 850629522}
@@ -267,7 +272,7 @@ MonoBehaviour:
   - Hungary
   flagImg:
   - {fileID: -8566980145151657624, guid: 84b8663d699184e9b8b43797d6cbb8e9, type: 3}
-  - {fileID: 21300000, guid: c1c1a57c4ebe7415b8fe1035972002d2, type: 3}
+  - {fileID: 6229635915326764836, guid: fbf320c42d42e4e01a03a3d96775f1f1, type: 3}
   - {fileID: -6805138237417362745, guid: 84b8663d699184e9b8b43797d6cbb8e9, type: 3}
   - {fileID: 8030981852063745717, guid: 84b8663d699184e9b8b43797d6cbb8e9, type: 3}
   - {fileID: 21300000, guid: 37c454686473542cd9ecf0631b95f9f2, type: 3}
@@ -958,7 +963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d626a842b593145ec98bc3f5268a9689, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ab23afa03755431cb31b03fa8117e6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2193,7 +2198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d626a842b593145ec98bc3f5268a9689, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ab23afa03755431cb31b03fa8117e6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3068,7 +3073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d626a842b593145ec98bc3f5268a9689, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ab23afa03755431cb31b03fa8117e6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3222,7 +3227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d626a842b593145ec98bc3f5268a9689, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ab23afa03755431cb31b03fa8117e6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4146,7 +4151,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -2254340448971330142, guid: 31807867893074ad584b35c70138880f, type: 3}
   m_Type: 3
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
   m_FillAmount: 0
@@ -6437,7 +6442,7 @@ GameObject:
   - component: {fileID: 1597190402}
   - component: {fileID: 1597190401}
   m_Layer: 5
-  m_Name: Panel - DataCountry
+  m_Name: Panel - CountryInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7446,7 +7451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d626a842b593145ec98bc3f5268a9689, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ab23afa03755431cb31b03fa8117e6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
