@@ -27,6 +27,18 @@ public class GameCountryConttroler : GameConttroler
     public bool slovakiaAttack;
     [Space(2f)]
     public bool hungaryAttack;
+    [Space(5f)]
+    public Sprite[] spriteUkraineAllCountry;
+    [Space(5f)]
+    public Sprite[] spriteMoldovaAllCountry;
+    [Space(5f)]
+    public Sprite[] spriteRumaniaAllCountry;
+    [Space(5f)]
+    public Sprite[] spritePolandAllCountry;
+    [Space(5f)]
+    public Sprite[] spriteSlovakiaAllCountry;
+    [Space(5f)]
+    public Sprite[] spriteHungaryAllCountry;
 
     private float attackModID;
 
@@ -53,6 +65,14 @@ public class GameCountryConttroler : GameConttroler
     public Sprite spriteOnDataCountry;
     [Space(2f)]
     public Sprite spriteOffDataCountry;
+
+    [Header("ButtonAttackCountry")]
+
+    public Image buttonAttack;
+    [Space(2f)]
+    public Sprite spriteOnAttack;
+    [Space(2f)]
+    public Sprite spriteOffAttack;
 
     [Header("GamePanel")]
 
@@ -215,7 +235,38 @@ public class GameCountryConttroler : GameConttroler
     {
         if (seeMod)
         {
-            img[0].sprite = fieldCountry[0];
+            if (ukraineAttack)
+            {
+                if(idCountry == 1)
+                {        
+                   img[0].sprite = spriteUkraineAllCountry[0];
+                }
+                else if (idCountry == 2)
+                {
+                   img[0].sprite = spriteMoldovaAllCountry[0];
+                }
+                else if(idCountry == 3)
+                {
+                   img[0].sprite = spriteRumaniaAllCountry[0];
+                }
+                else if(idCountry == 4)
+                {
+                   img[0].sprite = spritePolandAllCountry[0];
+                }
+                else if(idCountry == 5)
+                {
+                   img[0].sprite = spriteSlovakiaAllCountry[0];
+                }
+                else if(idCountry == 6)
+                {
+                   img[0].sprite = spriteHungaryAllCountry[0];
+                }       
+            }
+            else
+            {
+                img[0].sprite = fieldCountry[0];
+            }
+
             img[1].sprite = linearCountry[1];
             img[2].sprite = linearCountry[2];
             img[3].sprite = linearCountry[3];
@@ -228,8 +279,40 @@ public class GameCountryConttroler : GameConttroler
     {
         if (seeMod)
         {
-            img[0].sprite = linearCountry[0];
-            img[1].sprite = fieldCountry[1];
+           img[0].sprite = linearCountry[0];
+
+            if (moldovaAttack)
+            {
+                if(idCountry == 1)
+                {        
+                   img[1].sprite = spriteUkraineAllCountry[1];
+                }
+                else if (idCountry == 2)
+                {
+                   img[1].sprite = spriteMoldovaAllCountry[1];
+                }
+                else if(idCountry == 3)
+                {
+                   img[1].sprite = spriteRumaniaAllCountry[1];
+                }
+                else if(idCountry == 4)
+                {
+                   img[1].sprite = spritePolandAllCountry[1];
+                }
+                else if(idCountry == 5)
+                {
+                   img[1].sprite = spriteSlovakiaAllCountry[1];
+                }
+                else if(idCountry == 6)
+                {
+                   img[1].sprite = spriteHungaryAllCountry[1];
+                }        
+            }
+            else
+            {
+                img[1].sprite = fieldCountry[1];
+            }
+
             img[2].sprite = linearCountry[2];
             img[3].sprite = linearCountry[3];
             img[4].sprite = linearCountry[4];
@@ -243,7 +326,39 @@ public class GameCountryConttroler : GameConttroler
         {
             img[0].sprite = linearCountry[0];
             img[1].sprite = linearCountry[1];
-            img[2].sprite = fieldCountry[2];
+
+            if (rumaniaAttack)
+            {
+                 if(idCountry == 1)
+                {        
+                   img[2].sprite = spriteUkraineAllCountry[2];
+                }
+                else if (idCountry == 2)
+                {
+                   img[2].sprite = spriteMoldovaAllCountry[2];
+                }
+                else if(idCountry == 3)
+                {
+                   img[2].sprite = spriteRumaniaAllCountry[2];
+                }
+                else if(idCountry == 4)
+                {
+                   img[2].sprite = spritePolandAllCountry[2];
+                }
+                else if(idCountry == 5)
+                {
+                   img[2].sprite = spriteSlovakiaAllCountry[2];
+                }
+                else if(idCountry == 6)
+                {
+                   img[2].sprite = spriteHungaryAllCountry[2];
+                }     
+            }
+            else
+            {
+                img[2].sprite = fieldCountry[2];
+            }
+
             img[3].sprite = linearCountry[3];
             img[4].sprite = linearCountry[4];
             img[5].sprite = linearCountry[5];
@@ -257,7 +372,39 @@ public class GameCountryConttroler : GameConttroler
             img[0].sprite = linearCountry[0];
             img[1].sprite = linearCountry[1];
             img[2].sprite = linearCountry[2];
-            img[3].sprite = fieldCountry[3];
+
+            if (polandAttack)
+            {
+                if(idCountry == 1)
+                {        
+                   img[3].sprite = spriteUkraineAllCountry[3];
+                }
+                else if (idCountry == 2)
+                {
+                   img[3].sprite = spriteMoldovaAllCountry[3];
+                }
+                else if(idCountry == 3)
+                {
+                   img[3].sprite = spriteRumaniaAllCountry[3];
+                }
+                else if(idCountry == 4)
+                {
+                   img[3].sprite = spritePolandAllCountry[3];
+                }
+                else if(idCountry == 5)
+                {
+                   img[3].sprite = spriteSlovakiaAllCountry[3];
+                }
+                else if(idCountry == 6)
+                {
+                   img[3].sprite = spriteHungaryAllCountry[3];
+                }     
+            }
+            else
+            {
+                img[3].sprite = fieldCountry[3];
+            }
+
             img[4].sprite = linearCountry[4];
             img[5].sprite = linearCountry[5];
         }
@@ -271,7 +418,39 @@ public class GameCountryConttroler : GameConttroler
             img[1].sprite = linearCountry[1];
             img[2].sprite = linearCountry[2];
             img[3].sprite = linearCountry[3];
-            img[4].sprite = fieldCountry[4];
+
+            if (polandAttack)
+            {
+                if(idCountry == 1)
+                {        
+                   img[4].sprite = spriteUkraineAllCountry[4];
+                }
+                else if (idCountry == 2)
+                {
+                   img[4].sprite = spriteMoldovaAllCountry[4];
+                }
+                else if(idCountry == 3)
+                {
+                   img[4].sprite = spriteRumaniaAllCountry[4];
+                }
+                else if(idCountry == 4)
+                {
+                   img[4].sprite = spritePolandAllCountry[4];
+                }
+                else if(idCountry == 5)
+                {
+                   img[4].sprite = spriteSlovakiaAllCountry[4];
+                }
+                else if(idCountry == 6)
+                {
+                   img[4].sprite = spriteHungaryAllCountry[4];
+                }     
+            }
+            else
+            {
+                img[4].sprite = fieldCountry[4];
+            }
+
             img[5].sprite = linearCountry[5];
         }
     }
@@ -285,10 +464,50 @@ public class GameCountryConttroler : GameConttroler
             img[2].sprite = linearCountry[2];
             img[3].sprite = linearCountry[3];
             img[4].sprite = linearCountry[4];
-            img[5].sprite = fieldCountry[5];
+
+            if (hungaryAttack)
+            {
+                if(idCountry == 1)
+                {        
+                   img[5].sprite = spriteUkraineAllCountry[5];
+                }
+                else if (idCountry == 2)
+                {
+                   img[5].sprite = spriteMoldovaAllCountry[5];
+                }
+                else if(idCountry == 3)
+                {
+                   img[5].sprite = spriteRumaniaAllCountry[5];
+                }
+                else if(idCountry == 4)
+                {
+                   img[5].sprite = spritePolandAllCountry[5];
+                }
+                else if(idCountry == 5)
+                {
+                   img[5].sprite = spriteSlovakiaAllCountry[5];
+                }
+                else if(idCountry == 6)
+                {
+                   img[5].sprite = spriteHungaryAllCountry[5];
+                }      
+            }
+            else
+            {
+                img[5].sprite = fieldCountry[5];
+            }
         }
     }
 
+    public void OnTEST()
+    {
+        img[0].sprite = spriteUkraineAllCountry[0];
+        img[1].sprite = spriteUkraineAllCountry[1];
+        img[2].sprite = spriteUkraineAllCountry[2];
+        img[3].sprite = spriteUkraineAllCountry[3];
+        img[4].sprite = spriteUkraineAllCountry[4];
+        img[5].sprite = spriteUkraineAllCountry[5];
+    }
 
     public void OnSeeModTurn()
     {
@@ -458,7 +677,7 @@ public class GameCountryConttroler : GameConttroler
 
         if (attackMod)
         {
-               
+            buttonAttack.sprite = spriteOnAttack;      
         }
         else if (!attackMod)
         {
@@ -515,7 +734,9 @@ public class GameCountryConttroler : GameConttroler
                img[3].sprite = linearCountry[3];
                img[4].sprite = linearCountry[4];
                img[5].sprite = fieldCountry[5];
-            } 
+            }
+
+            buttonAttack.sprite = spriteOffAttack;
         }
     }
 
@@ -619,26 +840,32 @@ public class GameCountryConttroler : GameConttroler
     {
         if (attackModID == 1)
         {
+            img[0].sprite = spriteUkraineAllCountry[0];
             ukraineAttack = true;
         }
         else if (attackModID == 2)
         {
+            img[1].sprite = spriteMoldovaAllCountry[1];
             moldovaAttack = true;
         }
         else if (attackModID == 3)
         {
+            img[2].sprite = spriteRumaniaAllCountry[2];
             rumaniaAttack = true;
         }
         else if (attackModID == 4)
         {
+            img[3].sprite = spritePolandAllCountry[3];
             polandAttack = true;
         }
         else if (attackModID == 5)
         {
+            img[4].sprite = spriteSlovakiaAllCountry[4];
             slovakiaAttack = true;
         }
         else if (attackModID == 6)
         {
+            img[5].sprite = spriteHungaryAllCountry[5];
             hungaryAttack = true;
         }
 
