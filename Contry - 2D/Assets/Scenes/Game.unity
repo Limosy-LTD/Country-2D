@@ -293,12 +293,12 @@ MonoBehaviour:
   - {fileID: -4854432078867933733, guid: e5d1beccc38634947981fcc76a8ab8b7, type: 3}
   - {fileID: 3467911012036588037, guid: 004df9ff6c4b84c68b338de3fdb1f97b, type: 3}
   spriteHungaryAllCountry:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -7270091058684239640, guid: 342c5969d7ff44657b9de53404482b4a, type: 3}
+  - {fileID: 3358631630786907219, guid: 4b1bc5de77c3c45d8be37c771f96a89e, type: 3}
+  - {fileID: 2802394324267758951, guid: 53fa30fefc54d4a859c383559f3a9e45, type: 3}
+  - {fileID: -3505997618395985093, guid: 020ee5fe1746741cfba20a28437f3d63, type: 3}
+  - {fileID: -1243216880170238446, guid: 468ae546309094c98bcd07abbef28503, type: 3}
+  - {fileID: -7150109865580224505, guid: d7b0f31e808af4beb98248e4b14175eb, type: 3}
   buttonSeeAllCountry: {fileID: 86639593}
   spriteOnShowCountry: {fileID: 7296455168530560912, guid: 31807867893074ad584b35c70138880f, type: 3}
   spriteOffShowCountry: {fileID: -1762484114053470995, guid: 31807867893074ad584b35c70138880f, type: 3}
