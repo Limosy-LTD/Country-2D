@@ -6,9 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class GameConttroler : MonoBehaviour
 {
+    private float moneyadd;
+
     [Header("Country")]
 
     public Image[] img;
+
+    [Header("PromoPan")]
+    public InputField PromoCode;
+    public InputField Terminal;
+
+    public Text InfoPromoCode;
+    public Text InfoTerminal;
+
+    public GameObject TerminalPan;
 
     [Header("CountryImg")]
 
@@ -28,6 +39,28 @@ public class GameConttroler : MonoBehaviour
     public int WaterData;
 
     public Text TitleWaterSettings;
+
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey("WaterData"))
+        {
+            WaterData = PlayerPrefs.GetInt("WaterData");
+        }
+
+        if(WaterData == 1)
+        {
+            WaterObject.SetActive(true);
+            TitleWaterSettings.text = "Water - On";
+        }
+        else if (WaterData == 0)
+        {
+            WaterObject.SetActive(false);
+            TitleWaterSettings.text = "Water - Off";
+        }
+
+        InfoPromoCode.text = PromoCode.text;
+        InfoTerminal.text = Terminal.text;
+    }
 
     public void OnSelectCountryUkraine()
     {
@@ -119,14 +152,35 @@ public class GameConttroler : MonoBehaviour
         idName.text = nameCountry + " " + idCountry;
     }
 
+
     public void OnOpenUpdatePan()
     {
+        if (SettingsPanel.active)
+        {
+            return;
+        }
+
         UpdatePanel.SetActive(!UpdatePanel.activeSelf);
     }
 
     public void OnOpenSettingsPan()
     {
+        if (UpdatePanel.active)
+        {
+            return;
+        }
+
         SettingsPanel.SetActive(!SettingsPanel.activeSelf);
+    }
+
+    public void OnClikItchIoWeb()
+    {
+        Application.OpenURL("https://fanlizor.itch.io/");
+    }
+
+    public void OnClikInstagramWeb()
+    {
+        Application.OpenURL("https://www.instagram.com/arthur_reshetniak/");
     }
 
     public void OnClikWaterChange()
@@ -149,6 +203,30 @@ public class GameConttroler : MonoBehaviour
         }
     }
 
+    public void OnClikGoPromo()
+    {
+        if(PromoCode.text == "TERMINAL-ON")
+        {
+            TerminalPan.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("No corect!");
+        }
+    }
+
+    public void OnClikGoTerminal()
+    {
+        if(Terminal.text == "TERMINAL-OFF")
+        {
+            TerminalPan.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("No corect!");
+        }
+    }
+
     public void OnClikStart()
     {
         if(idCountry == 0)
@@ -156,7 +234,7 @@ public class GameConttroler : MonoBehaviour
             Debug.Log("Выбирите страну!");
         }
         else
-        { 
+        {
             SceneManager.LoadScene("Game");
         }
     }

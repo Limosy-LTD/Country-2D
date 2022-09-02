@@ -82,7 +82,20 @@ public class GameCountryConttroler : GameConttroler
     [Space(2f)]
     public GameObject panAgreeAtack;
     [Space(2f)]
+    public GameObject panChat;
+    public GameObject loginPanChat;
+    [Space(2f)]
     public GameObject WaterPanGame;
+
+    [Header("WarningMassage")]
+
+    public GameObject WarningObject;
+    [Space(2f)]
+    public Text WarningText;
+    [Space(2f)]
+    public bool ActiveMessage;
+    [Space(2f)]
+    public float idMessege;
 
     [Header("Curensy")]
 
@@ -644,7 +657,7 @@ public class GameCountryConttroler : GameConttroler
                }
                else
                {
-                   img[0].sprite = fieldCountry[0];
+                   img[1].sprite = fieldCountry[1];
                }
 
                if(rumaniaAttack)
@@ -929,6 +942,22 @@ public class GameCountryConttroler : GameConttroler
             attackModID = 1;
             panAgreeAtack.SetActive(true);
         }
+        else if(ukraineAttack)
+        {
+            if (!ActiveMessage && attackMod)
+            {
+                idMessege = 2;
+                StartCoroutine(MessageWarning());
+            }
+        }
+        else if (idCountry == 1)
+        {
+            if (!ActiveMessage && idCountry == 1 && attackMod)
+            {
+                idMessege = 1;
+                StartCoroutine(MessageWarning());
+            }
+        }
     }
 
     public void OnPressMoldovaAttack()
@@ -944,6 +973,22 @@ public class GameCountryConttroler : GameConttroler
 
             attackModID = 2;
             panAgreeAtack.SetActive(true);
+        }
+        else if(moldovaAttack)
+        {
+            if (!ActiveMessage && attackMod)
+            {
+                idMessege = 2;
+                StartCoroutine(MessageWarning());
+            }
+        }
+        else if (idCountry == 2)
+        {
+            if (!ActiveMessage && idCountry == 2 && attackMod)
+            {
+                idMessege = 1;
+                StartCoroutine(MessageWarning());
+            }
         }
     }
 
@@ -961,6 +1006,22 @@ public class GameCountryConttroler : GameConttroler
             attackModID = 3;
             panAgreeAtack.SetActive(true);
         }
+        else if(rumaniaAttack)
+        {
+            if (!ActiveMessage && attackMod)
+            {
+                idMessege = 2;
+                StartCoroutine(MessageWarning());
+            }
+        }
+        else if (idCountry == 3)
+        {
+            if (!ActiveMessage && idCountry == 3 && attackMod)
+            {
+                idMessege = 1;
+                StartCoroutine(MessageWarning());
+            }
+        }
     }
 
     public void OnPressPolandAttack()
@@ -976,6 +1037,22 @@ public class GameCountryConttroler : GameConttroler
 
             attackModID = 4;
             panAgreeAtack.SetActive(true);
+        }
+        else if(polandAttack)
+        {
+            if (!ActiveMessage && attackMod)
+            {
+                idMessege = 2;
+                StartCoroutine(MessageWarning());
+            }
+        }
+        else if (idCountry == 4)
+        {
+            if (!ActiveMessage && idCountry == 4 && attackMod)
+            {
+                idMessege = 1;
+                StartCoroutine(MessageWarning());
+            }
         }
     }
 
@@ -993,6 +1070,22 @@ public class GameCountryConttroler : GameConttroler
             attackModID = 5;
             panAgreeAtack.SetActive(true);
         }
+        else if(slovakiaAttack)
+        {
+            if (!ActiveMessage && attackMod)
+            {
+                idMessege = 2;
+                StartCoroutine(MessageWarning());
+            }
+        }
+        else if (idCountry == 5)
+        {
+            if (!ActiveMessage && idCountry == 5 && attackMod)
+            {
+                idMessege = 1;
+                StartCoroutine(MessageWarning());
+            }
+        }
     }
 
     public void OnPressHungaryAttack()
@@ -1008,6 +1101,22 @@ public class GameCountryConttroler : GameConttroler
 
             attackModID = 6;
             panAgreeAtack.SetActive(true);
+        }
+        else if(hungaryAttack)
+        {
+            if (!ActiveMessage && attackMod)
+            {
+                idMessege = 2;
+                StartCoroutine(MessageWarning());
+            }
+        }
+        else if (idCountry == 6)
+        {
+            if (!ActiveMessage && idCountry == 6 && attackMod)
+            {
+                idMessege = 1;
+                StartCoroutine(MessageWarning());
+            }
         }
     }
 
@@ -1090,7 +1199,7 @@ public class GameCountryConttroler : GameConttroler
 
     public void OnOpenPanUpgrade()
     {
-        if (panDataCountry.activeSelf)
+        if (panDataCountry.activeSelf || panChat.activeSelf)
         {
             return;
         }
@@ -1098,9 +1207,20 @@ public class GameCountryConttroler : GameConttroler
         panUpgrade.SetActive(!panUpgrade.activeSelf);
     }
 
+    public void OnOpenChat()
+    {
+        if (panDataCountry.activeSelf || panUpgrade.activeSelf)
+        {
+            return;
+        }
+
+        panChat.SetActive(!panChat.activeSelf);
+        loginPanChat.SetActive(!loginPanChat.activeSelf);
+    }
+
     public void OnOpenPanDataCountry()
     {
-        if (panUpgrade.activeSelf)
+        if (panUpgrade.activeSelf || panChat.activeSelf)
         {
             return;
         }
@@ -1200,5 +1320,27 @@ public class GameCountryConttroler : GameConttroler
 
             buildersZone.fillAmount += buildersZoneFill;
         }
+    }
+
+    IEnumerator MessageWarning()
+    {
+        ActiveMessage = true;
+
+        if(idMessege == 1)
+        {
+            WarningText.text = "THIS IS YOUR COUNTRY!";
+        }
+        else if (idMessege == 2)
+        {
+            WarningText.text = "YOU HAVE ALREADY CONQUERED THIS COUNTRY!";
+        }
+
+        WarningObject.SetActive(true);
+        yield return new WaitForSeconds(1.4f);
+        ActiveMessage = false;
+    
+        WarningText.text = "Sorry error !";
+
+        WarningObject.SetActive(false);
     }
 }
