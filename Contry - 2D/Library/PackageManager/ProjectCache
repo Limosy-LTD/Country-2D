@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637963521390000000
+      ticks: 637992110160000000
     m_Hash: 447771862
   m_LockFileStatus:
     m_FilePath: /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637963521560000000
+      ticks: 637992110160000000
     m_Hash: 2969975552
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -141,6 +141,7 @@ m_PackageAssets:
         - 8.0.3
         - 9.0.0-pre.1
         - 9.0.0-pre.3
+        - 9.0.0
         compatible:
         - 5.2.0
         - 5.2.1
@@ -246,6 +247,7 @@ m_PackageAssets:
         - 5.0.0-pre.2
         - 5.0.0
         - 5.0.1
+        - 5.0.2
         compatible:
         - 4.0.1
         verified: 4.0.1
@@ -361,6 +363,7 @@ m_PackageAssets:
         - 7.0.2
         - 8.0.0-pre.1
         - 8.0.0-pre.3
+        - 8.0.0
         compatible:
         - 4.3.0
         verified: 4.3.0
@@ -565,6 +568,7 @@ m_PackageAssets:
         - 8.0.0
         - 8.0.1
         - 9.0.0-pre.1
+        - 9.0.0
         compatible:
         - 5.3.0
         verified: 5.3.0
@@ -3674,6 +3678,7 @@ m_PackageAssets:
         - 7.0.1
         - 8.0.0-pre.1
         - 8.0.0-pre.2
+        - 8.0.0
         compatible:
         - 4.2.0
         verified: 4.2.0
