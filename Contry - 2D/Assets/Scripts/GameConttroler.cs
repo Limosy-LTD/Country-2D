@@ -6,20 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameConttroler : MonoBehaviour
 {
-    private float moneyadd;
-
     [Header("Country")]
 
     public Image[] img;
-
-    [Header("PromoPan")]
-    public InputField PromoCode;
-    public InputField Terminal;
-
-    public Text InfoPromoCode;
-    public Text InfoTerminal;
-
-    public GameObject TerminalPan;
 
     [Header("CountryImg")]
 
@@ -31,6 +20,7 @@ public class GameConttroler : MonoBehaviour
     public int idCountry;
 
     [Header("PanelGame")]
+    public GameObject SelectPanel;
     public GameObject UpdatePanel;
     public GameObject SettingsPanel;
 
@@ -203,28 +193,9 @@ public class GameConttroler : MonoBehaviour
         }
     }
 
-    public void OnClikGoPromo()
+    public void OnClikSelectCounty()
     {
-        if(PromoCode.text == "TERMINAL-ON")
-        {
-            TerminalPan.SetActive(true);
-        }
-        else
-        {
-            Debug.Log("No corect!");
-        }
-    }
-
-    public void OnClikGoTerminal()
-    {
-        if(Terminal.text == "TERMINAL-OFF")
-        {
-            TerminalPan.SetActive(false);
-        }
-        else
-        {
-            Debug.Log("No corect!");
-        }
+        SelectPanel.SetActive(!SelectPanel.activeSelf);
     }
 
     public void OnClikStart()

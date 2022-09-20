@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Limosy.LTD
+  companyName: Limosy.ltd
   productName: Countryus
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 11.0.3.F1
+  bundleVersion: 13.0.0.F1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Limosy.LTD
+    Android: com.limosy.ltd
     Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Standalone: 0
@@ -272,7 +272,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 7cf778fac486d46c48d2432a70b5faec, type: 3}
+      m_Icon: {fileID: 2800000, guid: 9f8173706a1f04bc0a5015edbe4a930c, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -644,7 +644,7 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 06ff963a139e64751b4cfa544760a587, type: 3}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: ae8a80e442a0b42faa4900143c96cbe5, type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   blurSplashScreenBackground: 1
   spritePackerPolicy: 
