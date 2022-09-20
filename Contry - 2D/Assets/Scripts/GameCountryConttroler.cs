@@ -1248,7 +1248,6 @@ public class GameCountryConttroler : GameConttroler
             }
 
             curencyMoney -= costUpgradeItem[0];
-            costUpgradeItem[0] *= 2;
 
             population.fillAmount += populationFill;
         }
@@ -1265,7 +1264,6 @@ public class GameCountryConttroler : GameConttroler
             }
 
             curencyMoney -= costUpgradeItem[1];
-            costUpgradeItem[1] *= 2;
 
             livingZone.fillAmount += livingZoneFill;
         }
@@ -1282,7 +1280,6 @@ public class GameCountryConttroler : GameConttroler
             }
 
             curencyMoney -= costUpgradeItem[2];
-            costUpgradeItem[2] *= 2;
 
             industrialZone.fillAmount += industrialZoneFill;
         }
@@ -1299,7 +1296,6 @@ public class GameCountryConttroler : GameConttroler
             }
 
             curencyMoney -= costUpgradeItem[3];
-            costUpgradeItem[3] *= 2;
 
             entertainmentZone.fillAmount += entertainmentZoneFill;
         }
@@ -1316,7 +1312,6 @@ public class GameCountryConttroler : GameConttroler
             }
 
             curencyMoney -= costUpgradeItem[4];
-            costUpgradeItem[4] *= 2;
 
             buildersZone.fillAmount += buildersZoneFill;
         }
