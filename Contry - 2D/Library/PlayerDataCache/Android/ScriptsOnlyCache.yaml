@@ -16,6 +16,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -26,7 +28,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -37,6 +38,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -131,7 +138,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/Main.unity:
+    Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -193,8 +200,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3280}
     - Class: 114
-      Script: {instanceID: 3344}
-    - Class: 114
       Script: {instanceID: 3552}
     - Class: 114
       Script: {instanceID: 3562}
@@ -202,6 +207,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3564}
     - Class: 114
       Script: {instanceID: 3688}
+    - Class: 114
+      Script: {instanceID: 3940}
     - Class: 114
       Script: {instanceID: 4342}
     - Class: 114
@@ -243,8 +250,6 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -337,7 +342,7 @@ ScriptsOnlyBuild:
     className: Line
   - hash:
       serializedVersion: 2
-      Hash: 8656f68148775dde35d64b82eb0e26a6
+      Hash: af9ec98786d8c54a637fa9b1614bd184
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameConttroler
@@ -601,7 +606,7 @@ ScriptsOnlyBuild:
     className: SplineWalker
   - hash:
       serializedVersion: 2
-      Hash: 9c3b33de25c1396569e745dd38ff1049
+      Hash: 7319f6c9c78a355afe47e2be82afe97d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameCountryConttroler
@@ -1687,7 +1692,7 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Main.unity
+  - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
   playerPath: /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry
-    - 2D/Countryus - 11.0.6.3B1.apk
+    - 2D/Countryus - 12.0.2.B1.apk

@@ -1,0 +1,218 @@
+Unity Editor version:    2020.3.37f1 (8c66806a0c04)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.5 (Build 21G72)
+Darwin version:          21.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Users/arthurreshetnyak/Desktop/UnityGame/2020.3.37f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50669
+Successfully changed project path to: /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D
+/Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 120.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.37f1 (8c66806a0c04)
+[Subsystems] Discovering subsystems at path /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.37f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/arthurreshetnyak/Desktop/Country-2D/Country-Project/Country-2D/Contry - 2D/Assets
+GfxDevice: creating device client; threaded=0
+2022-09-20 20:02:28.997 Unity[10106:385581] Color LCD preferred device: Intel(R) Iris(TM) Graphics 6000 (low power)
+2022-09-20 20:02:28.997 Unity[10106:385581] Metal devices available: 1
+2022-09-20 20:02:28.997 Unity[10106:385581] 0: Intel(R) Iris(TM) Graphics 6000 (low power)
+2022-09-20 20:02:28.998 Unity[10106:385581] Using device Intel(R) Iris(TM) Graphics 6000 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Graphics 6000
+Initialize mono
+Mono path[0] = '/Users/arthurreshetnyak/Desktop/UnityGame/2020.3.37f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Users/arthurreshetnyak/Desktop/UnityGame/2020.3.37f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Users/arthurreshetnyak/Desktop/UnityGame/2020.3.37f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56106
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.37f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.002376 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 69.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.199 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1199ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (872ms)
+			LoadAssemblies (180ms)
+			RebuildTransferFunctionScriptingTraits (2ms)
+			SetupTypeCache (324ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (330ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (69ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002805 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 77.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.867 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2872ms)
+		BeginReloadAssembly (317ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (2447ms)
+			LoadAssemblies (405ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (875ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (822ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (543ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.040884 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.050538 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.37f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.68 seconds
+Initializing Unity extensions:
+2022-09-20 20:02:40.363 Unity[10106:385581] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018d5260 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-09-20 20:02:40.371 Unity[10106:385581] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000018c8930 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+The currently available disk space (90 MB) is lower than the suggested threshold of 256 MBs. We strongly suggest that you free up some space before resuming work in the Editor.
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2441 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 224.9 MB.
+System memory in use after: 224.1 MB.
+
+Unloading 261 unused Assets to reduce memory usage. Loaded Objects now: 2907.
+Total: 5.307847 ms (FindLiveObjects: 0.379766 ms CreateObjectMapping: 0.249717 ms MarkObjects: 3.901914 ms  DeleteObjects: 0.775009 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Sprites/Country/Serbia/Serbia - Main.png
+  artifactKey: Guid(b57d6cef2bd7b47ec90a5a6ce6f397d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Serbia/Serbia - Main.png using Guid(b57d6cef2bd7b47ec90a5a6ce6f397d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7c82a457aa09b6275c5a8a6e4c5dcd') in 1.364955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 585.805852 seconds.
+  path: Assets/Sprites/Country/Serbia/Serbia - Wight.png
+  artifactKey: Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Serbia/Serbia - Wight.png using Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c255962236622c42442263c42d443a9') in 0.085637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.289594 seconds.
+  path: Assets/Sprites/Country/Serbia/Serbia - Wight.png
+  artifactKey: Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Serbia/Serbia - Wight.png using Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56041ac3ed18bf5d1c139f5d877411b') in 0.044375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.678095 seconds.
+  path: Assets/Sprites/Country/Serbia/Serbia - Wight.png
+  artifactKey: Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Serbia/Serbia - Wight.png using Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361e8ab1b12937dc8ffcd918ecfa998c') in 0.014663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.157974 seconds.
+  path: Assets/Sprites/Country/Serbia/Serbia - Wight.png
+  artifactKey: Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Serbia/Serbia - Wight.png using Guid(abcbce2097ce7421f8c939240d78f752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896060a394251eeaac242ef00aa3bba2') in 0.042458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.575427 seconds.
+  path: Assets/Sprites/Country/Bulgaria/Bulgaria - Wight.png
+  artifactKey: Guid(fffb9a37b2e5f4e61b9070edafb11f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Bulgaria/Bulgaria - Wight.png using Guid(fffb9a37b2e5f4e61b9070edafb11f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125b11256f078d15699e66229e187230') in 0.020501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.438319 seconds.
+  path: Assets/Sprites/Country/Bulgaria/Bulgaria - Wight.png
+  artifactKey: Guid(fffb9a37b2e5f4e61b9070edafb11f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Bulgaria/Bulgaria - Wight.png using Guid(fffb9a37b2e5f4e61b9070edafb11f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f3316c188d7ce5bb54d95cdfdf9269') in 0.063998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.579893 seconds.
+  path: Assets/Sprites/Country/Bulgaria/Bulgaria - Wight.png
+  artifactKey: Guid(fffb9a37b2e5f4e61b9070edafb11f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Bulgaria/Bulgaria - Wight.png using Guid(fffb9a37b2e5f4e61b9070edafb11f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a690fa45471cb691a0c1e10e72e8b01a') in 0.039800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 181.315242 seconds.
+  path: Assets/Sprites/Country/Greece/Greece - Wight.png
+  artifactKey: Guid(7f09c8f31bcd240ee82b99d54be67036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Greece/Greece - Wight.png using Guid(7f09c8f31bcd240ee82b99d54be67036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a85050a9bbd41c35cea6e9b7be2b1d') in 0.064262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.886391 seconds.
+  path: Assets/Sprites/Country/Greece/Greece - Wight.png
+  artifactKey: Guid(7f09c8f31bcd240ee82b99d54be67036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Greece/Greece - Wight.png using Guid(7f09c8f31bcd240ee82b99d54be67036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49da8c6f8b8cf4c5cd09967da0bc367') in 0.024624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.401916 seconds.
+  path: Assets/Sprites/Country/Greece/Greece - Wight.png
+  artifactKey: Guid(7f09c8f31bcd240ee82b99d54be67036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Country/Greece/Greece - Wight.png using Guid(7f09c8f31bcd240ee82b99d54be67036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55d19d578562809c97445e104d48a5d') in 0.050715 seconds 

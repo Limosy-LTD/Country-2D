@@ -47,9 +47,6 @@ public class GameConttroler : MonoBehaviour
             WaterObject.SetActive(false);
             TitleWaterSettings.text = "Water - Off";
         }
-
-        InfoPromoCode.text = PromoCode.text;
-        InfoTerminal.text = Terminal.text;
     }
 
     public void OnSelectCountryUkraine()
@@ -62,7 +59,7 @@ public class GameConttroler : MonoBehaviour
         img[5].sprite = linearCountry[5]; 
 
         idCountry = 1;
-        nameCountry = "Ukraine";
+        nameCountry = "UKRAINE";
         PlayerPrefs.SetInt("ID", idCountry);
         idName.text = nameCountry + " " + idCountry;
     }
@@ -77,7 +74,7 @@ public class GameConttroler : MonoBehaviour
         img[5].sprite = linearCountry[5]; 
         
         idCountry = 2;
-        nameCountry = "Moldova";
+        nameCountry = "MOLDOVA";
         PlayerPrefs.SetInt("ID", idCountry);
         idName.text = nameCountry + " " + idCountry;
     }
@@ -92,7 +89,7 @@ public class GameConttroler : MonoBehaviour
         img[5].sprite = linearCountry[5]; 
 
         idCountry = 3;
-        nameCountry = "Rumania";
+        nameCountry = "RUMANIA";
         PlayerPrefs.SetInt("ID", idCountry);
         idName.text = nameCountry + " " + idCountry;
     }
@@ -107,7 +104,7 @@ public class GameConttroler : MonoBehaviour
         img[5].sprite = linearCountry[5]; 
 
         idCountry = 4;
-        nameCountry = "Poland";
+        nameCountry = "POLAND";
         PlayerPrefs.SetInt("ID", idCountry);
         idName.text = nameCountry + " " + idCountry;
     }
@@ -122,7 +119,7 @@ public class GameConttroler : MonoBehaviour
         img[5].sprite = linearCountry[5]; 
 
         idCountry = 5;
-        nameCountry = "Slovakia";
+        nameCountry = "SLOVAKIA";
         PlayerPrefs.SetInt("ID", idCountry);
         idName.text = nameCountry + " " + idCountry;
     }
@@ -137,7 +134,7 @@ public class GameConttroler : MonoBehaviour
         img[5].sprite = fieldCountry[5]; 
 
         idCountry = 6;
-        nameCountry = "Hungary";
+        nameCountry = "HUNGARY";
         PlayerPrefs.SetInt("ID", idCountry);
         idName.text = nameCountry + " " + idCountry;
     }
