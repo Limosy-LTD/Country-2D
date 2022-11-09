@@ -1,0 +1,180 @@
+[api-updater (non-obsolete-error-filter)] 31.10.2022 17:13:45 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 215,321ms
+moved types parse time: 87ms
+candidates parse time : 1ms
+C# parse time         : 454ms
+candidates check time : 120ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 31.10.2022 17:14:13 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 223,823ms
+moved types parse time: 252ms
+candidates parse time : 8ms
+C# parse time         : 503ms
+candidates check time : 145ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 04.11.2022 19:41:33 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 445,721ms
+moved types parse time: 112ms
+candidates parse time : 3ms
+C# parse time         : 438ms
+candidates check time : 108ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 04.11.2022 19:41:41 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 214,2ms
+moved types parse time: 65ms
+candidates parse time : 2ms
+C# parse time         : 323ms
+candidates check time : 112ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 04.11.2022 19:42:03 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 338,183ms
+moved types parse time: 76ms
+candidates parse time : 1ms
+C# parse time         : 469ms
+candidates check time : 144ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 04.11.2022 19:42:10 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 251,657ms
+moved types parse time: 71ms
+candidates parse time : 2ms
+C# parse time         : 380ms
+candidates check time : 109ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 04.11.2022 19:42:50 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 200,729ms
+moved types parse time: 68ms
+candidates parse time : 1ms
+C# parse time         : 331ms
+candidates check time : 96ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 04.11.2022 19:42:56 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 258,262ms
+moved types parse time: 72ms
+candidates parse time : 1ms
+C# parse time         : 477ms
+candidates check time : 106ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 05.11.2022 12:27:28 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 506,71ms
+moved types parse time: 173ms
+candidates parse time : 1ms
+C# parse time         : 487ms
+candidates check time : 63ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 05.11.2022 20:05:06 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 661,945ms
+moved types parse time: 828ms
+candidates parse time : 1ms
+C# parse time         : 1250ms
+candidates check time : 263ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:23:28 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 463,357ms
+moved types parse time: 99ms
+candidates parse time : 1ms
+C# parse time         : 567ms
+candidates check time : 154ms
+console write time    : 1ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:26:15 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 449,008ms
+moved types parse time: 96ms
+candidates parse time : 2ms
+C# parse time         : 622ms
+candidates check time : 178ms
+console write time    : 2ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:28:59 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 447,23ms
+moved types parse time: 100ms
+candidates parse time : 2ms
+C# parse time         : 500ms
+candidates check time : 162ms
+console write time    : 3ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:31:53 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 429,686ms
+moved types parse time: 140ms
+candidates parse time : 4ms
+C# parse time         : 670ms
+candidates check time : 147ms
+console write time    : 4ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:32:10 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 436,632ms
+moved types parse time: 110ms
+candidates parse time : 2ms
+C# parse time         : 475ms
+candidates check time : 152ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:32:48 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 397,717ms
+moved types parse time: 90ms
+candidates parse time : 2ms
+C# parse time         : 547ms
+candidates check time : 167ms
+console write time    : 3ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:33:01 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 235,623ms
+moved types parse time: 83ms
+candidates parse time : 3ms
+C# parse time         : 395ms
+candidates check time : 159ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 06.11.2022 12:33:56 : Starting /Users/arthurreshetnyak/Desktop/UnityGame/2020.3.41f1/Unity.app/Contents/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 236,905ms
+moved types parse time: 95ms
+candidates parse time : 1ms
+C# parse time         : 549ms
+candidates check time : 161ms
+console write time    : 0ms
+
