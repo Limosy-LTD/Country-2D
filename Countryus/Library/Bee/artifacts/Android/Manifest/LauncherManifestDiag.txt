@@ -1,0 +1,2 @@
+Using template '/Users/arthurreshetnyak/Desktop/UnityGame/2022.2.0f1/PlaybackEngines/AndroidPlayer/Apk/LauncherManifest.xml'
+

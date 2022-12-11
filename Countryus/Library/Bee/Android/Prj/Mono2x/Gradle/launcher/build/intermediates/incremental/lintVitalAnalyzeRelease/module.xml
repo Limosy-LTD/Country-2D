@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/arthurreshetnyak/Desktop/Country-2D/Countryus/Library/Bee/Android/Prj/Mono2x/Gradle/launcher"
+    name=":launcher"
+    type="APP"
+    maven="Gradle:launcher:"
+    gradle="7.1.2"
+    buildFolder="build"
+    bootClassPath="/Users/arthurreshetnyak/Desktop/UnityGame/2022.2.0f1/PlaybackEngines/AndroidPlayer/SDK/platforms/android-32/android.jar:/Users/arthurreshetnyak/Desktop/UnityGame/2022.2.0f1/PlaybackEngines/AndroidPlayer/SDK/build-tools/32.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-32"
+    neverShrinking="true">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
