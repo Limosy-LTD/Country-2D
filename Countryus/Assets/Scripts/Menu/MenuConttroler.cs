@@ -21,8 +21,6 @@ public class MenuConttroler : TextConttroler
     public GameObject PanelNews;
     public GameObject PanelSetting;
 
-    public GameObject LodingSceanPan;
-
     public GameObject PanelBlackout;
 
 
@@ -194,15 +192,8 @@ public class MenuConttroler : TextConttroler
         }
         else
         {
-            StartCoroutine(LodingScean());
+            SceneManager.LoadScene(1);
         }
-    }
-
-    IEnumerator LodingScean()
-    {
-        LodingSceanPan.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(1);
     }
 }
 
