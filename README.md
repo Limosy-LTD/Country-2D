@@ -6,12 +6,8 @@ What's new ? You can read here!
 
 * New version - 12.2.F1 *
 - Bag fix
-
+- 
 ---------------------
-
-h3 Stable version - 12.0.F1
-----------------------
-
 - - - - - - - - - - - - -
 Game available on Android
 ------------------------
