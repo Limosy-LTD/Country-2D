@@ -1,5 +1,5 @@
 # Countryus
-Description : Do as you want, the main thing is to become the coolest country of the world, you rule the country of luck! 
+Description : *Do as you want, the main thing is to become the coolest country of the world, you rule the country of luck!*
 
 INFORMATION
 =====================
