@@ -11,6 +11,6 @@ Stable version - 12.0.F1
 ------------------------
 
 - - - - - - - - - - - - -
-You can play on ->
+Game available on Android
 ------------------------
-Android
+
