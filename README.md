@@ -11,4 +11,5 @@ What's new ? You can read here!
 ---------------------
 Game available on Android
 ------------------------
+**But when game be stable we publish on ios**
 
