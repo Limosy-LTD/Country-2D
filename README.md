@@ -9,8 +9,8 @@ What's new ? You can read here!
 
 ---------------------
 
-- Stable version - 12.0.F1 -
-------------------------
+**- Stable version - 12.0.F1
+----------------------
 
 - - - - - - - - - - - - -
 Game available on Android
