@@ -7,6 +7,5 @@ Stable version - 12.0.F1
 
 The game is available on 
 - - - - - - - - - - - - -
-------------------------
 Android
 ------------------------
